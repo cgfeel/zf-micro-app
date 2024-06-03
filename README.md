@@ -56,7 +56,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 - 使用微任务的方式，通过 `script` 加载所需的依赖
 - 加载顺序：
-  - 先加载本地导入的包：`index.js`
+  - 提取 `script` 为 `type="systemjs-importmap"` 中的资源作一张映射表，方便后续资源加载
+  - 加载本地导入的包：`index.js`
   - 由于加载过程是一个微任务，所以 `script` 加载完成后会立即执行 `System.register`
   - 将 `System.register` 提供的 2 个参数存起来，等待上面微任务继续执行
   - 继续下一个微任务，分别拿到依赖项加载，并按照顺序分别提供给回调方法返回的 `setters`
