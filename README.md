@@ -32,7 +32,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 - `mode: development`，方便查看打包后的文件 [[查看配置](https://github.com/cgfeel/micro-systemjs/blob/main/webpack.config.js)]
 - `externals: ["react", "react-dom"]`，分离依赖的框架
-- `libraryTarget: "system"` 最终编译为 `index.js` 放置在 `dist`
+- `libraryTarget: "system"` 最终编译为 `index.js` 放置在 `dist` [[查看 index.js](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
 
 `index.js` 概览：
 
@@ -42,7 +42,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
   - `setters`：记录加载模块的数组对象，顺序和加载依赖数组一致
   - `execute`：全部加载完毕后执行方法进行渲染
 
-知识点：手写两个 html 了解 `systemjs` [[查看 index.js](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
+知识点：手写两个 html 了解 `systemjs`
 
 1. 通过 `systemjs` 加载应用和对应的逻辑，完成渲染
 
