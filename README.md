@@ -91,7 +91,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 - `index.ejs` 中去除不需要的部分再来看，和原来的 `systemjs` 是一样的，包含：`runtime`、`systemjs-importmap`、`System.import`
 - `levi-root-config.ts` 分别通过：`registerApplication` 注册应用、`start` 启动
 
-每天加一个应用需要：
+每个添加的应用都需要：
 
 - 在 `systemjs-importmap` 指明子项目名称，以及对应的子应用链接
 - 在 `registerApplication` 指明完整的名称、以子项目名称作为导入 id、指定激活的 URL
