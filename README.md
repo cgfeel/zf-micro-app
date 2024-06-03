@@ -21,9 +21,29 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 目录：`./systemjs` [[查看](https://github.com/cgfeel/micro-systemjs)]
 
+知识点：
+
+- 通过 `systemjs` 加载应用和对应的逻辑，完成渲染
+- 复现 `systemjs`
+
 运行环境：`Webpack` + `React` + `Typescript` (不重要，换成 `Vue` 也是一样的)
 
-重点：
+`Webpack` 打包总结：
 
-- `Webpack` 打包模式 `mode: development`，方便查看打包后的文件 [[查看配置](https://github.com/cgfeel/micro-systemjs/blob/main/webpack.config.js)]
-- 最终编译为 `index.js` 放置在 `dist`，手写两个 html 了解 `systemjs` [[查看 index.js](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
+- `mode: development`，方便查看打包后的文件 [[查看配置](https://github.com/cgfeel/micro-systemjs/blob/main/webpack.config.js)]
+- `externals: ["react", "react-dom"]`，分离依赖的框架
+- `libraryTarget: "system"` 最终编译为 `index.js` 放置在 `dist`
+
+`index.js` 概览：
+
+- 由 `System.register` 完成注册，接受 2 个参数，第一个是依赖，这里是 `["react","react-dom"]`
+- 第二个是加载回调函数，有 2 个参数 [[见文件注释](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.html)]
+- 第二个回调函数返回一个对象，包含：
+  - `setters`：记录加载模块的数组对象，顺序和加载依赖数组一致
+  - `execute`：全部加载完毕后执行方法进行渲染
+
+知识点：手写两个 html 了解 `systemjs` [[查看 index.js](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
+
+1. 通过 `systemjs` 加载应用和对应的逻辑，完成渲染
+
+文件：
