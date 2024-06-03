@@ -23,13 +23,13 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 运行环境：`Webpack` + `React` + `Typescript` (不重要，换成 `Vue` 也是一样的)
 
-**`Webpack` 打包总结：**
+**`Webpack` 打包总结：** [[查看配置](https://github.com/cgfeel/micro-systemjs/blob/main/webpack.config.js)]
 
-- `mode: development`，方便查看打包后的文件 [[查看配置](https://github.com/cgfeel/micro-systemjs/blob/main/webpack.config.js)]
+- `mode: development`，方便查看打包后的文件
 - `externals: ["react", "react-dom"]`，分离依赖的框架
-- `libraryTarget: "system"` 最终编译为 `index.js` 放置在 `dist` [[查看 index.js](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
+- `libraryTarget: "system"` 最终编译为 `index.js` 放置在 `dist`
 
-**`index.js` 概览：**
+**`index.js` 概览：** [[查看](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.js)]
 
 - 由 `System.register` 完成注册，接受 2 个参数，第一个是依赖，这里是 `["react","react-dom"]`
 - 第二个是加载回调函数，有 2 个参数 [[见文件注释](https://github.com/cgfeel/micro-systemjs/blob/main/dist/index.html)]，返回一个对象，包含：
