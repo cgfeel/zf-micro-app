@@ -88,7 +88,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 - `Single-spa` 每个应用中包含一个组织名：`orgName`、还有一个项目名：`root-config`，作为完整的名称：`@levi/root-config`
 - `index.ejs` 中去除不需要的部分再来看，和原来的 `systemjs` 是一样的，包含：`runtime`、`systemjs-importmap`、`System.import`
-- `levi-root-config.ts` 分别通过：`registerApplication` 注册应用、`start`：启动
+- `levi-root-config.ts` 分别通过：`registerApplication` 注册应用、`start` 启动
 
 每天加一个应用需要：
 
