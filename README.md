@@ -72,13 +72,13 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 目录：`./systemjs` [[查看](https://github.com/cgfeel/zf-micro-app/tree/main/single-spa)]
 
-包含 3 个项目：`single-spa` 主应用，基座、`React` 子应用、`Vue` 子应用
+包含 3 个项目：`single-spa` 主应用，基座 - `React` 子应用 - `Vue` 子应用
 
 **`single-spa` 主应用：**
 
 目录：`./single-spa/substrate` [[查看](https://github.com/cgfeel/micro-single-app-substrate)]
 
-加载顺序，和前面 `systemjs` 方式一直的：
+加载顺序，和前面 `systemjs` 方式一致的：
 
 - `webpack.config.js` 通过 `HtmlWebpackPlugin` 拿 `./src/index.ejs` 作为入口模板
 - `./src/index.ejs` 拉到底部可看到导入语句 `System.import('@levi/root-config');`
