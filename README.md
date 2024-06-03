@@ -97,6 +97,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 **`React` 子应用：**
 
+目录：`./single-spa/react-project` [[查看](https://github.com/cgfeel/micro-single-app-react)]
+
 通过 `Single-spa` 默认创建的 `React 17`，在 `webpack.config.js` 中有几个关键点：
 
 - 设置组织名和项目名
@@ -106,6 +108,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 项目中为了演示保留了 `react`、`react-dom`，并添加了 `React-Router`
 
 **`Vue` 子应用：**
+
+目录：`./single-spa/vue-project` [[查看](https://github.com/cgfeel/micro-single-app-vue)]
 
 通过 `Single-spa` 默认创建的 `Vue 3`，和 `React` 不同的是
 
