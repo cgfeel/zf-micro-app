@@ -77,7 +77,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 包含 3 个项目：`single-spa` 主应用，基座 - `React` 子应用 - `Vue` 子应用
 
-运行方式：按照 `package.json` 的 `script` 依次启动主应用、子应用，访问主应用顶部有子应用导航链接
+运行方式：依次启动主应用、子应用服务，访问主应用顶部有子应用导航链接
 
 **`single-spa` 主应用：**
 
