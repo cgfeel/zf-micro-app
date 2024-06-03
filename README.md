@@ -38,6 +38,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 知识点：手写两个 html 了解 `systemjs`
 
+运行方式：直接点击 html 在浏览器中查看演示，不需要启动服务
+
 1. 通过 `systemjs` 加载应用和对应的逻辑，完成渲染
 
 文件：`./systemjs/dist/systemjs.html` [[查看](https://github.com/cgfeel/micro-systemjs/blob/main/dist/systemjs.html)]
@@ -74,6 +76,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 目录：`./systemjs` [[查看](https://github.com/cgfeel/zf-micro-app/tree/main/single-spa)]
 
 包含 3 个项目：`single-spa` 主应用，基座 - `React` 子应用 - `Vue` 子应用
+
+运行方式：按照 `package.json` 的 `script` 依次启动主应用、子应用，访问主应用顶部有子应用导航链接
 
 **`single-spa` 主应用：**
 
