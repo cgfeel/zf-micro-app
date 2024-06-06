@@ -24,3 +24,7 @@ https://github.com/cgfeel/micro-systemjs
 ### `Single-spa` 使用
 
 https://github.com/cgfeel/micro-single-app-substrate
+
+### `Single-spa` 复现
+
+https://github.com/cgfeel/micro-single-spa-app
