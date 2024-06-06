@@ -12,9 +12,8 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 ## 阅读说明
 
-- 每一个字模块 `README.md` 梳理一个大概知识点作为索引
-- 当前仓库会将链接汇总
-- 细节查看仓库源码注释
+- 每一个子模块 `README.md` 梳理知识点作为索引，当前仓库会将链接汇总
+- 细节查看源码注释
 
 ## 示例
 
