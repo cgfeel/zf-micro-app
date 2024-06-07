@@ -28,3 +28,7 @@ https://github.com/cgfeel/micro-single-app-substrate
 ### `Single-spa` 复现
 
 https://github.com/cgfeel/micro-single-spa-app
+
+### `qiankun` 使用
+
+https://github.com/cgfeel/micro-qiankun-substrate
