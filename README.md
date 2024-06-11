@@ -34,6 +34,8 @@ https://github.com/cgfeel/micro-single-app-substrate
 
 https://github.com/cgfeel/micro-qiankun-substrate
 
+包含：
+
 - 使用：父子应用搭建、手动加载静态应用、父子通信、沙箱隔离样式
 - 沙箱原理：`shadowDom`、快照、`proxy` 单例、`proxy` 多例
 - 原理：注册、执行、预加载、沙箱、加载、卸载
