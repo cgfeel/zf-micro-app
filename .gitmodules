@@ -10,9 +10,6 @@
 [submodule "systemjs"]
 	path = systemjs
 	url = git@github.com:cgfeel/micro-systemjs.git
-[submodule "single-spa-raw"]
-	path = single-spa-raw
-	url = git@github.com:cgfeel/micro-single-spa-app.git
 [submodule "qiankun/substrate"]
 	path = qiankun/substrate
 	url = git@github.com:cgfeel/micro-qiankun-substrate.git
