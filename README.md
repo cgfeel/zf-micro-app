@@ -17,9 +17,16 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 ## 示例
 
+点开链接查看详细内容
+
 ### `SystemJS` 使用和复现
 
 https://github.com/cgfeel/micro-systemjs
+
+包含：
+
+- 使用 `systemjs` 加载应用
+- 复现：通过微任务加载所需资源，通过 `window` 快照提取模块
 
 ### `single-spa` 使用和复现
 
