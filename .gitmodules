@@ -1,6 +1,9 @@
 [submodule "single-spa/react-project"]
 	path = single-spa/react-project
 	url = git@github.com:cgfeel/micro-single-app-react.git
+[submodule "single-spa/single-spa-raw"]
+	path = single-spa/single-spa-raw
+	url = git@github.com:cgfeel/micro-qiankun-substrate.git
 [submodule "single-spa/substrate"]
 	path = single-spa/substrate
 	url = git@github.com:cgfeel/micro-single-app-substrate.git
@@ -22,6 +25,3 @@
 [submodule "qiankun/vue-project"]
 	path = qiankun/vue-project
 	url = git@github.com:cgfeel/micro-qiankun-app-vue3.git
-[submodule "single-spa/single-spa-raw"]
-	path = single-spa/single-spa-raw
-	url = git@github.com:cgfeel/micro-qiankun-substrate.git
