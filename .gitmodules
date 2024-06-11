@@ -25,3 +25,6 @@
 [submodule "qiankun/vue-project"]
 	path = qiankun/vue-project
 	url = git@github.com:cgfeel/micro-qiankun-app-vue3.git
+[submodule "single-spa/single-spa-raw"]
+	path = single-spa/single-spa-raw
+	url = git@github.com:cgfeel/micro-qiankun-substrate.git
