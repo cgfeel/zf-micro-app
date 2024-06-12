@@ -25,3 +25,12 @@
 [submodule "qiankun/vue-project"]
 	path = qiankun/vue-project
 	url = git@github.com:cgfeel/micro-qiankun-app-vue3.git
+[submodule "micro-app/react-project"]
+	path = micro-app/react-project
+	url = git@github.com:cgfeel/micro-app-react-project.git
+[submodule "micro-app/substrate"]
+	path = micro-app/substrate
+	url = git@github.com:cgfeel/micro-app-substrate.git
+[submodule "micro-app/vue-project"]
+	path = micro-app/vue-project
+	url = git@github.com:cgfeel/micro-app-vue-project.git
