@@ -34,3 +34,6 @@
 [submodule "micro-app/vue-project"]
 	path = micro-app/vue-project
 	url = git@github.com:cgfeel/micro-app-vue-project.git
+[submodule "micro-app/static-project"]
+	path = micro-app/static-project
+	url = git@github.com:cgfeel/micro-app-static-project.git
