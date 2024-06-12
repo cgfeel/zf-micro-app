@@ -53,3 +53,5 @@ https://github.com/cgfeel/micro-qiankun-substrate
 ### `micro-app` 使用和复现
 
 来自官方：目前市面上接入微前端成本最低的方案。
+
+https://github.com/cgfeel/micro-app-substrate
