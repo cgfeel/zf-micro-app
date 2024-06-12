@@ -30,6 +30,8 @@ https://github.com/cgfeel/micro-systemjs
 
 ### `single-spa` 使用和复现
 
+来自官方：可能是你见过最完善的微前端解决方案 🧐
+
 https://github.com/cgfeel/micro-single-app-substrate
 
 包含：
@@ -47,3 +49,7 @@ https://github.com/cgfeel/micro-qiankun-substrate
 - 沙箱原理：`shadowDom`、快照、`proxy` 单例、`proxy` 多例
 - `qiankun` 源码解读：注册、执行、预加载、沙箱、加载、卸载
 - 常见问题：模块依赖、组件复用、`Vite` 支持、多重嵌套、`CSS` 隔离、要废弃的方法
+
+### `micro-app` 使用和复现
+
+来自官方：目前市面上接入微前端成本最低的方案。
