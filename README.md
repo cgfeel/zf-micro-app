@@ -60,4 +60,4 @@ https://github.com/cgfeel/micro-app-substrate
 
 - 使用：父子应用搭建
 - `web componet` 创建组件：`slot` 插槽、观察自定义属性、样式隔离、事件触发
-- `micro-app` 原理：`microApp.start` 启动、`MicroAppElement` 自定义组件、`CreateApp` 创建应用、`keep-alive` 模式
+- `micro-app` 原理：`microApp.start` 启动、`MicroAppElement` 自定义组件、`CreateApp` 创建应用、`sandbox` 沙箱、`keep-alive` 模式
