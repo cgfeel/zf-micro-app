@@ -70,7 +70,7 @@ https://github.com/cgfeel/micro-app-substrate
 - `web componet` 创建组件：`slot` 插槽、观察自定义属性、样式隔离、事件触发
 - `micro-app` 原理：`microApp.start` 启动、`MicroAppElement` 自定义组件、`CreateApp` 创建应用、`sandbox` 沙箱、挂载和卸载、`keep-alive` 模式
 
-### `wujie` 使用和原理
+### `wujie` 复现、使用和原理
 
 来自官方：极致的微前端框架
 
