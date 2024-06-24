@@ -46,3 +46,6 @@
 [submodule "wujie/vue-project"]
 	path = wujie/vue-project
 	url = git@github.com:cgfeel/micro-wujie-app-vue3.git
+[submodule "wujie/static-project"]
+	path = wujie/static-project
+	url = git@github.com:cgfeel/micro-wujie-app-static.git
