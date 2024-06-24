@@ -30,8 +30,6 @@ https://github.com/cgfeel/micro-systemjs
 
 ### `single-spa` 使用和复现
 
-来自官方：可能是你见过最完善的微前端解决方案 🧐
-
 https://github.com/cgfeel/micro-single-app-substrate
 
 包含：
@@ -40,6 +38,8 @@ https://github.com/cgfeel/micro-single-app-substrate
 - 复现：原理、生命周期、注册、加载、挂载、监听路由、目录说明
 
 ### `qiankun` 使用和复现
+
+来自官方：可能是你见过最完善的微前端解决方案 🧐
 
 https://github.com/cgfeel/micro-qiankun-substrate
 
@@ -52,6 +52,6 @@ https://github.com/cgfeel/micro-qiankun-substrate
 
 ### `micro-app` 使用和复现
 
-来自官方：目前市面上接入微前端成本最低的方案。
+~~来自官方：目前市面上接入微前端成本最低的方案。~~（目前已删除）
 
 https://github.com/cgfeel/micro-app-substrate
