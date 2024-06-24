@@ -37,3 +37,12 @@
 [submodule "micro-app/static-project"]
 	path = micro-app/static-project
 	url = git@github.com:cgfeel/micro-app-static-project.git
+[submodule "wujie/substrate"]
+	path = wujie/substrate
+	url = git@github.com:cgfeel/micro-wujie-substrate.git
+[submodule "wujie/react-project"]
+	path = wujie/react-project
+	url = git@github.com:cgfeel/micro-wujie-app-cra.git
+[submodule "wujie/vue-project"]
+	path = wujie/vue-project
+	url = git@github.com:cgfeel/micro-wujie-app-vue3.git
