@@ -55,3 +55,9 @@ https://github.com/cgfeel/micro-qiankun-substrate
 ~~来自官方：目前市面上接入微前端成本最低的方案。~~（目前已删除）
 
 https://github.com/cgfeel/micro-app-substrate
+
+包含：
+
+- 使用：父子应用搭建
+- `web componet` 创建组件：`slot` 插槽、观察自定义属性、样式隔离、事件触发
+- `micro-app` 原理：`microApp.start` 启动、`MicroAppElement` 自定义组件、`CreateApp` 创建应用、`keep-alive` 模式
