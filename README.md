@@ -74,6 +74,6 @@ https://github.com/cgfeel/micro-app-substrate
 
 来自官方：极致的微前端框架
 
-特点：基于 `web component` 和 `iframe` 沙箱，和 `micro-app` 不同的是 `wujie` 劫持 `iframe` 对象和 `web component` 进行通信，而不是提取子应用的 `script` 包裹在模块中，通过沙箱的 `proxyWindow` 做隔离
+特点：基于 `web component` 和 `iframe` 沙箱，和 `micro-app` 不同的是 `wujie` 劫持 `iframe` 对象和 `web component` 进行通信，而不是提取子应用的 `script` 包裹在模块中，通过 `with` 使用沙箱的 `proxyWindow` 做隔离
 
 https://github.com/cgfeel/micro-wujie-substrate
