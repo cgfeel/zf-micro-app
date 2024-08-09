@@ -62,10 +62,31 @@
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)] | 没有                            | `App.css` 中没有提取到样式需要打补丁                              |
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)] | 没有                            | `:host` 中没有提取到样式需要打补丁                                |
 
-从上面看共有 5 处样式：
+动态加载的样式共有 6 处：
 
 - `shadowRoot.host` 末尾 1 处：`@font-face`
 - 容器 `html` 下第 1 个子元素：`WUJIE_SHADE_STYLE`
 - 容器 `head` 下有 3 处：`index.css`、`App.css`、`:host`
 
-收集的 ``
+`styleSheetElements` 集合共有 3 项：
+
+- `index.css`、`App.css`、`:host`
+
+## 切换应用存在重复引入样式的问题
+
+流程顺序从上到下，标 🌟 说明插入 `style` 元素到 `Dom` 中，表 📝 说明 `style` 元素记录到实例中：
+
+### 1. 注入资源：
+
+| 加载方式                                                                                                                                                                                      | 调用场景                                                                                                                                                               | 加载样式               | 说明                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ |
+| `renderTemplateToShadowRoot` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#rendertemplatetoshadowroot-%E6%B8%B2%E6%9F%93%E8%B5%84%E6%BA%90%E5%88%B0-shadowroot)] | `active`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L232)]                    | 🌟 `WUJIE_SHADE_STYLE` | 静态样式，将作为容器 `html` 元素下的第一个元素，用于撑开应用 |
+| `patchRenderEffect` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#patchrendereffect-%E4%B8%BA%E5%AE%B9%E5%99%A8%E6%89%93%E8%A1%A5%E4%B8%81)]                     | `renderTemplateToShadowRoot`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/shadow.ts#L235)] | 没有                   | 不加载样式，只重写 `Dom` 写入操作，为动态加载样式做准备      |
+| `patchCssRules` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#-patchcssrules-%E5%AD%90%E5%BA%94%E7%94%A8%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]          | `active`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L233)]                    | 没有                   | 静态样式中没有匹配到，等待 `script` 注入后动态渲染样式       |
+
+### 2. 重建样式：
+
+| 加载方式                                                                                                                                                                             | 调用场景                                                                                                                                                        | 加载样式                           | 说明                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------- |
+| `rebuildStyleSheets` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#-rebuildstylesheets-%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E6%A0%B7%E5%BC%8F)]         | `startApp`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/index.ts#L245)]             | 🌟 `index.css`、`App.css`、`:host` | 通过 `styleSheetElements` 恢复样式                                                  |
+| `patchCssRules` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#-patchcssrules-%E5%AD%90%E5%BA%94%E7%94%A8%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)] | `rebuildStyleSheets`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L446)] | 没有                               | 再次提取到 `:host` 执行 `appendChild`，由于注入资源时已重写了方法，所以这里会被拦截 |
