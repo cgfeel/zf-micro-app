@@ -1,4 +1,4 @@
-# `wujie` 中 `patchCssRules` 粗在重复加载的 `Bug`
+# `wujie` 中 `patchCssRules` 存在重复加载的 `Bug`
 
 `patchCssRules` 说明见：总结 [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#-patchcssrules-%E5%AD%90%E5%BA%94%E7%94%A8%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]
 
