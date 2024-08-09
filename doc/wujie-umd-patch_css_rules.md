@@ -1,3 +1,20 @@
+# `wujie` 中 `patchCssRules` 粗在重复加载的 `Bug`
+
+`patchCssRules` 说明见：总结 [[查看](#-patchcssrules-子应用样式打补丁)]
+
+问题描述：
+
+- `umd` 模式下 `patchCssRules` 存在重复添加样式的情况
+
+以子应用 `react-project` 举例 [[查看](https://github.com/cgfeel/micro-wujie-app-cra)]：
+
+- 总共包含 2 个样式：`index.css`、`App.css` [[查看](https://github.com/cgfeel/micro-wujie-app-cra/tree/main/src)]
+- 在 `index.css` 中添加 `:root` 和 `@font-face` 共计 2 个 [[查看](https://github.com/cgfeel/micro-wujie-app-cra/blob/main/src/index.css)]
+
+## 初次加载应用是正常的
+
+流程参考下列表格，顺序从上到下：
+
 **1. 注入资源：**
 
 | 加载方式                                                                                                                                                                                      | 调用场景                                                                                                                                                               | 加载样式               | 说明                                                    |
