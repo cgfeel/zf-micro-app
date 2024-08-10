@@ -134,3 +134,14 @@
 
 - `shadowRoot` 下的样式随容器在 `unmount` 时一同销毁
 - `shadowRoot.host` 下的样式会在 `destroy` 时清空挂载点
+
+关于 `styleSheetElements` 额外说明：
+
+- 来自 `rawDOMAppendOrInsertBefore` 拦截写入的 `style` 元素会插入集合
+- 然后通过 `patchStylesheetElement` 劫持 `style` 的属性写入操作
+- 通过 `handleStylesheetElementPatch` 提取每次注入时指定的样式
+- 其中 `@font-face` 因为是插入 `shadowRoot.host`，所以不用关心应用切换是否销毁
+- 而 `:hoot` 在注入 `head` 时候会再次被 `patchRenderEffect` 拦截
+- 然后再次转交 `:host` 给 `rawDOMAppendOrInsertBefore` 进行处理
+- 这样插入的 `:host` 因此也记录在 `styleSheetElements` 集合做
+- 然后 `:host` 因为本身样式不符合 `handleStylesheetElementPatch` 提取规定，所以单个流程结束
