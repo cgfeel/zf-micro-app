@@ -127,3 +127,8 @@
 | `alive`  | 和重建模式一样           | 不删除资源，也不用恢复资源                      |
 | 重建模式 | 样式来自动态收集，不重复 | 每次都销毁实例，和初次加载一样                  |
 | `umd`    | 样式来自动态收集，不重复 | `rebuildStyleSheets` 1 次，`patchCssRules` 1 次 |
+
+重复添加的样式在哪里销毁：
+
+- `shadowRoot` 下的样式随容器在 `unmount` 时一同销毁
+- `shadowRoot.host` 下的样式会在 `destroy` 时清空挂载点
