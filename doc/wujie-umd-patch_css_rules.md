@@ -143,7 +143,7 @@
 - 其中 `@font-face` 因为是插入 `shadowRoot.host`，所以不用关心应用切换是否销毁
 - 而 `:hoot` 在注入 `head` 时候会再次被 `patchRenderEffect` 拦截
 - 然后再次转交 `:host` 给 `rawDOMAppendOrInsertBefore` 进行处理
-- 这样插入的 `:host` 因此也记录在 `styleSheetElements` 集合做
-- 然后 `:host` 因为本身样式不匹配 `handleStylesheetElementPatch` 提取规定，单个流程结束
+- 这样插入的 `:host` 因此也记录在 `styleSheetElements` 集合
+- 最后 `:host` 因为本身样式不匹配 `handleStylesheetElementPatch` 提取规定，单个流程结束
 
 > 这样下次切换应用通过 `rebuildStyleSheets` 恢复所有 `styleSheetElements` 记录的样式，包括打补丁的 `:host`
