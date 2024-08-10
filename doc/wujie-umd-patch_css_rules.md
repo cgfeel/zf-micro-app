@@ -139,7 +139,7 @@
 
 关于 `styleSheetElements`：
 
-- 来自 `rawDOMAppendOrInsertBefore` 拦截写入的 `style` 元素会插入集合
+- 来自 `rawDOMAppendOrInsertBefore` 拦截写入的 `style` 元素会插入 `styleSheetElements` 集合
 - 然后通过 `patchStylesheetElement` 劫持 `style` 的属性写入操作
 - 通过 `handleStylesheetElementPatch` 提取每次注入时指定的样式
 - 其中 `@font-face` 因为是插入 `shadowRoot.host`，所以不用关心应用切换是否销毁
