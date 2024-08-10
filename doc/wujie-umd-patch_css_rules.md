@@ -62,10 +62,10 @@
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)] | 没有                            | `App.css` 中没有提取到样式需要打补丁                                                                         |
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)] | 没有                            | `:host` 中没有提取到样式需要打补丁                                                                           |
 
-动态加载的样式共有 6 处：
+加载的样式共有 6 处：
 
 - `shadowRoot.host` 末尾 1 处：`@font-face`
-- 容器 `html` 下第 1 个子元素：`WUJIE_SHADE_STYLE`
+- 容器 `html` 下第 1 个子元素：`WUJIE_SHADE_STYLE`（静态样式）
 - 容器 `head` 下有 3 处：`index.css`、`App.css`、`:host`
 
 `styleSheetElements` 集合共有 3 项：
