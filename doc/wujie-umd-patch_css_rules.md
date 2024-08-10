@@ -100,6 +100,8 @@
 | `WUJIE_DATA_ATTACH_CSS_FLAG`                                                                                                                                                                                                                | `patchCssRules`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L470)]                                     | 没有                               | 打上标记避免下次重复执行                                                            |
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)]                        | 没有                               | 最后的宏任务，`:host` 中没有提取到样式需要打补丁                                    |
 
+### 3. 总结：
+
 重复加载样式 2 条：
 
 - `:host`：重复插入 `head` 1 条
