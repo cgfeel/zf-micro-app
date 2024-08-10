@@ -135,7 +135,9 @@
 - `shadowRoot` 下的样式随容器在 `unmount` 时一同销毁
 - `shadowRoot.host` 下的样式会在 `destroy` 时清空挂载点
 
-关于 `styleSheetElements` 额外说明：
+### 4. 额外说明：
+
+关于 `styleSheetElements`：
 
 - 来自 `rawDOMAppendOrInsertBefore` 拦截写入的 `style` 元素会插入集合
 - 然后通过 `patchStylesheetElement` 劫持 `style` 的属性写入操作
@@ -147,3 +149,8 @@
 - 最后 `:host` 因为本身样式不匹配 `handleStylesheetElementPatch` 提取规定，单个流程结束
 
 > 这样下次切换应用通过 `rebuildStyleSheets` 恢复所有 `styleSheetElements` 记录的样式，包括打补丁的 `:host`
+
+而对于动态的去操作 `style` 元素：
+
+- 由于 `handleStylesheetElementPatch` 每次操作都是对整个样式元素的提取
+- 可能会造成重复打补丁的情况，对于这种情况的影响也只是多添加了补丁样式，对页面的渲染和交互不产生任何影响
