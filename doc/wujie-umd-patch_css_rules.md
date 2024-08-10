@@ -99,3 +99,31 @@
 | `fontStyleSheetElement`                                                                                                                                                                                                                     | `patchCssRules`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L467)]                                     | 🌟 `@font-face`                    | 再次将 `@font-face` 添加到 `shadowRoot.host` 末尾                                   |
 | `WUJIE_DATA_ATTACH_CSS_FLAG`                                                                                                                                                                                                                | `patchCssRules`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/sandbox.ts#L470)]                                     | 没有                               | 打上标记避免下次重复执行                                                            |
 | `patcher` [[查看](https://github.com/cgfeel/micro-wujie-substrate?tab=readme-ov-file#handlestylesheetelementpatch%E4%B8%BA%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A8%E6%80%81%E6%A0%B7%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81)]                      | `handleStylesheetElementPatch`，见：源码 [[查看](https://github.com/Tencent/wujie/blob/9733864b0b5e27d41a2dc9fac216e62043273dd3/packages/wujie-core/src/effect.ts#L66)]                        | 没有                               | 最后的宏任务，`:host` 中没有提取到样式需要打补丁                                    |
+
+重复加载样式 2 条：
+
+- `:host`：重复插入 `head` 1 条
+- `@font-face`：重复插入 1 条到 `shadowRoot.host`
+
+重复记录 `styleSheetElements` 两条，都是 `:host`：
+
+- `rewriteAppendOrInsertChild`：动态添加样式 1 条
+- `patchCssRules`：动态添加样式 1 条
+
+> 至此由于打上了标签 `WUJIE_DATA_ATTACH_CSS_FLAG`，下次切换应用不会再重复增加
+
+问题来源：
+
+- `rebuildStyleSheets`：重建样式之后 `patchCssRules`
+
+影响：
+
+- 除了重复添加了 `Dom` 元素，没有任何影响
+
+不同模式对比：
+
+| 模式     | 初次加载                 | 切换应用                                        |
+| -------- | ------------------------ | ----------------------------------------------- |
+| `alive`  | 和重建模式一样           | 不删除资源，也不用恢复资源                      |
+| 重建模式 | 样式来自动态收集，不重复 | 每次都销毁实例，和初次加载一样                  |
+| `umd`    | 样式来自动态收集，不重复 | `rebuildStyleSheets` 1 次，`patchCssRules` 1 次 |
