@@ -21,7 +21,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 - 每一个子模块 `README.md` 梳理知识点作为索引，当前仓库会将链接汇总
 - 细节查看源码注释
 
-## 示例
+## 微前端示例、原理，以及源码解读
 
 点开链接查看详细内容
 
@@ -83,3 +83,7 @@ https://github.com/cgfeel/micro-app-substrate
 特点：基于 `web component` 和 `iframe` 沙箱，和 `micro-app` 不同的是 `wujie` 劫持 `iframe` 对象和 `web component` 进行通信，而不是提取子应用的 `script` 包裹在模块中，通过 `with` 使用沙箱的 `proxyWindow` 做隔离
 
 https://github.com/cgfeel/micro-wujie-substrate
+
+## 官方文档复现
+
+计划开始
