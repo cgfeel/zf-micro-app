@@ -23,7 +23,7 @@ git clone --recurse-submodules git@github.com:cgfeel/zf-micro-app.git
 
 ## 微前端示例、原理，以及源码解读
 
-点开链接查看详细内容
+以下仓库整理了：珠峰课程内容，以及官方源码的自我解读
 
 ### `SystemJS` 使用和复现
 
