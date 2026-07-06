@@ -1,51 +1,51 @@
 [submodule "single-spa/react-project"]
-	path = single-spa/react-project
+	path = apps/single-spa/react-project
 	url = git@github.com:cgfeel/micro-single-app-react.git
 [submodule "single-spa/single-spa-raw"]
-	path = single-spa/single-spa-raw
+	path = apps/single-spa/single-spa-raw
 	url = git@github.com:cgfeel/micro-single-spa-app.git
 [submodule "single-spa/substrate"]
-	path = single-spa/substrate
+	path = apps/single-spa/substrate
 	url = git@github.com:cgfeel/micro-single-app-substrate.git
 [submodule "single-spa/vue-project"]
-	path = single-spa/vue-project
+	path = apps/single-spa/vue-project
 	url = git@github.com:cgfeel/micro-single-app-vue.git
 [submodule "systemjs"]
-	path = systemjs
+	path = apps/systemjs
 	url = git@github.com:cgfeel/micro-systemjs.git
 [submodule "qiankun/substrate"]
-	path = qiankun/substrate
+	path = apps/qiankun/substrate
 	url = git@github.com:cgfeel/micro-qiankun-substrate.git
 [submodule "qiankun/react-project"]
-	path = qiankun/react-project
+	path = apps/qiankun/react-project
 	url = git@github.com:cgfeel/micro-qiankun-app-cra.git
 [submodule "qiankun/static-project"]
-	path = qiankun/static-project
+	path = apps/qiankun/static-project
 	url = git@github.com:cgfeel/micro-qiankun-app-static.git
 [submodule "qiankun/vue-project"]
-	path = qiankun/vue-project
+	path = apps/qiankun/vue-project
 	url = git@github.com:cgfeel/micro-qiankun-app-vue3.git
 [submodule "micro-app/react-project"]
-	path = micro-app/react-project
+	path = apps/micro-app/react-project
 	url = git@github.com:cgfeel/micro-app-react-project.git
 [submodule "micro-app/substrate"]
-	path = micro-app/substrate
+	path = apps/micro-app/substrate
 	url = git@github.com:cgfeel/micro-app-substrate.git
 [submodule "micro-app/vue-project"]
-	path = micro-app/vue-project
+	path = apps/micro-app/vue-project
 	url = git@github.com:cgfeel/micro-app-vue-project.git
 [submodule "micro-app/static-project"]
-	path = micro-app/static-project
+	path = apps/micro-app/static-project
 	url = git@github.com:cgfeel/micro-app-static-project.git
 [submodule "wujie/substrate"]
-	path = wujie/substrate
+	path = apps/wujie/substrate
 	url = git@github.com:cgfeel/micro-wujie-substrate.git
 [submodule "wujie/react-project"]
-	path = wujie/react-project
+	path = apps/wujie/react-project
 	url = git@github.com:cgfeel/micro-wujie-app-cra.git
 [submodule "wujie/vue-project"]
-	path = wujie/vue-project
+	path = apps/wujie/vue-project
 	url = git@github.com:cgfeel/micro-wujie-app-vue3.git
 [submodule "wujie/static-project"]
-	path = wujie/static-project
+	path = apps/wujie/static-project
 	url = git@github.com:cgfeel/micro-wujie-app-static.git
