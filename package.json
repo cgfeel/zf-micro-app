@@ -1,0 +1,13 @@
+{
+  "name": "zf-spa",
+  "version": "0.0.1",
+  "description": "不同的微前端解决方案",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "levi<cgfeel@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.25.0"
+}
