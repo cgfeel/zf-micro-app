@@ -3,8 +3,8 @@
 ## 新计划
 
 - 使用 `monorepo` + `submodule` 的方式实现微前端
-- `/apps` 目录下咩个项目按照各自技术栈实现微前端
-- 然后再通过 `Module Federation` 连接所有 `submodule` 和主应用，使每个微前端的基座称为当前仓库的子应用
+- `/apps` 目录下每个项目按照各自技术栈实现微前端
+- 然后再通过 `Module Federation` 连接所有 `submodule` 和主应用，使每个微前端的基座成为当前仓库的子应用
 
 ## 目的
 
