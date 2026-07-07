@@ -1,0 +1,32 @@
+{
+  "name": "@event-chat/micro-dev-config",
+  "version": "0.0.1",
+  "description": "统一微前端开发环境",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "micro app",
+    "dev"
+  ],
+  "author": "Levi <cgfeel@gmail.com> (https://github.com/cgfeel)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgfeel/zf-micro-app"
+  },
+  "bugs": {
+    "url": "https://github.com/cgfeel/zf-micro-app/issues",
+    "email": "cgfeel@gmail.com"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.25.0",
+  "dependencies": {
+    "typescript": "^5.9",
+    "eslint": "^9",
+    "prettier": "^3",
+    "vite": "^7",
+    "vitest": "^3",
+    "@types/node": "^24"
+  }
+}
