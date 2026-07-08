@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.5](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.4...micro-dev-config@v0.0.5) (2026-07-08)
+
+
+### Bug Fixes
+
+* update module to esm ([8c345d7](https://github.com/cgfeel/zf-micro-app/commit/8c345d7d6612c512a064497026ea481dbfe2b64b))
+* update module to esm ([3e6493b](https://github.com/cgfeel/zf-micro-app/commit/3e6493ba2e59deb4179e010c57713dde96cfdff1))
+* update path ([245e4ba](https://github.com/cgfeel/zf-micro-app/commit/245e4ba8a2fe2d3020de16d1d69d0700d45237f7))
+
 ## [0.0.4](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.3...micro-dev-config@v0.0.4) (2026-07-08)
 
 
