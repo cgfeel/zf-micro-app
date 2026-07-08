@@ -712,10 +712,10 @@ importers:
   packages/micro-dev-config:
     dependencies:
       prettier:
-        specifier: ^3
+        specifier: ^3.7.4
         version: 3.9.4
       typescript:
-        specifier: ^5.9
+        specifier: ^5.9.3
         version: 5.9.3
       webpack:
         specifier: ^5.91.0
@@ -726,6 +726,10 @@ importers:
       webpack-dev-server:
         specifier: ^5.0.4
         version: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
+    devDependencies:
+      '@types/node':
+        specifier: ^16.18.126
+        version: 16.18.126
 
 packages:
 
@@ -10202,7 +10206,7 @@ snapshots:
       error-stack-parser: 2.1.4
       string-width: 4.2.3
       strip-ansi: 6.0.1
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   '@soda/get-current-script@1.0.2': {}
 
@@ -10887,7 +10891,7 @@ snapshots:
       '@vue/cli-shared-utils': 5.0.9
       babel-loader: 8.4.1(@babel/core@7.29.7)(webpack@5.108.4)
       thread-loader: 3.0.4(webpack@5.108.4)
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -10943,7 +10947,7 @@ snapshots:
       '@vue/cli-shared-utils': 5.0.9
       babel-loader: 8.4.1(@babel/core@7.29.7)(webpack@5.108.4)
       thread-loader: 3.0.4(webpack@5.108.4)
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -10970,7 +10974,7 @@ snapshots:
       eslint: 7.32.0
       eslint-webpack-plugin: 3.2.0(eslint@7.32.0)(webpack@5.108.4)
       globby: 11.1.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
       yorkie: 2.0.0
     transitivePeerDependencies:
       - '@minify-html/node'
@@ -10995,7 +10999,7 @@ snapshots:
       eslint: 7.32.0
       eslint-webpack-plugin: 3.2.0(eslint@7.32.0)(webpack@5.108.4)
       globby: 11.1.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
       yorkie: 2.0.0
     transitivePeerDependencies:
       - '@minify-html/node'
@@ -11047,7 +11051,7 @@ snapshots:
       ts-loader: 9.6.2(loader-utils@3.3.1)(typescript@4.5.5)(webpack@5.108.4)
       typescript: 4.5.5
       vue: 3.5.39(typescript@4.5.5)
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -12088,7 +12092,7 @@ snapshots:
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   babel-loader@9.2.1(@babel/core@7.29.7)(webpack@5.108.4):
     dependencies:
@@ -12632,7 +12636,7 @@ snapshots:
       normalize-path: 3.0.0
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   core-js-compat@3.49.0:
     dependencies:
@@ -12724,7 +12728,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       semver: 7.8.5
     optionalDependencies:
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   css-minimizer-webpack-plugin@3.4.1(webpack@5.108.4(postcss@8.5.16)):
     dependencies:
@@ -12744,7 +12748,7 @@ snapshots:
       schema-utils: 4.3.3
       serialize-javascript: 6.0.2
       source-map: 0.6.1
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   css-prefers-color-scheme@6.0.3(postcss@8.5.16):
     dependencies:
@@ -13552,7 +13556,7 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       schema-utils: 4.3.3
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   eslint-webpack-plugin@3.2.0(eslint@9.39.4(jiti@1.21.7))(webpack@5.108.4(postcss@8.5.16)):
     dependencies:
@@ -13940,7 +13944,7 @@ snapshots:
       semver: 7.8.5
       tapable: 1.1.3
       typescript: 4.5.5
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       eslint: 7.32.0
 
@@ -15423,7 +15427,7 @@ snapshots:
     dependencies:
       schema-utils: 4.3.3
       tapable: 2.3.3
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   minimalistic-assert@1.0.1: {}
 
@@ -15468,7 +15472,7 @@ snapshots:
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
-      webpack: 5.108.4(webpack-cli@4.10.0)
+      webpack: 5.108.4(webpack-cli@5.1.4)
 
   minipass@3.3.6:
     dependencies:
@@ -16017,7 +16021,7 @@ snapshots:
       klona: 2.0.6
       postcss: 8.5.16
       semver: 7.8.5
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   postcss-logical@5.0.4(postcss@8.5.16):
     dependencies:
@@ -16342,7 +16346,7 @@ snapshots:
       chalk: 2.4.2
       figures: 2.0.0
       log-update: 2.3.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   progress@2.0.3: {}
 
@@ -17228,7 +17232,7 @@ snapshots:
   standalone-single-spa-webpack-plugin@3.0.0(html-webpack-plugin@5.6.7(webpack@5.108.4))(webpack@5.108.4):
     dependencies:
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   standalone-single-spa-webpack-plugin@4.0.0(html-webpack-plugin@5.6.7(webpack@5.108.4))(webpack@5.108.4):
     dependencies:
@@ -17445,7 +17449,7 @@ snapshots:
 
   systemjs-webpack-interop@2.3.7(webpack@5.108.4):
     dependencies:
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   table@6.9.0:
     dependencies:
@@ -17518,7 +17522,7 @@ snapshots:
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       cssnano: 5.1.15(postcss@8.5.16)
       postcss: 8.5.16
@@ -17566,7 +17570,7 @@ snapshots:
       loader-utils: 2.0.4
       neo-async: 2.6.2
       schema-utils: 3.3.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   throat@6.0.2: {}
 
@@ -17636,7 +17640,7 @@ snapshots:
       picomatch: 4.0.5
       source-map: 0.7.6
       typescript: 4.5.5
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       loader-utils: 3.3.1
 
@@ -17850,7 +17854,7 @@ snapshots:
       semver: 7.8.5
       standalone-single-spa-webpack-plugin: 3.0.0(html-webpack-plugin@5.6.7(webpack@5.108.4))(webpack@5.108.4)
       systemjs-webpack-interop: 2.3.7(webpack@5.108.4)
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - html-webpack-plugin
 
@@ -17943,7 +17947,7 @@ snapshots:
       loader-utils: 1.4.2
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.3
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.39
       prettier: 2.8.8
@@ -18017,7 +18021,7 @@ snapshots:
       chalk: 4.1.2
       hash-sum: 2.0.0
       watchpack: 2.5.2
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.39
       vue: 3.5.39(typescript@4.5.5)
@@ -18027,7 +18031,7 @@ snapshots:
       chalk: 4.1.2
       hash-sum: 2.0.0
       watchpack: 2.5.2
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.39
       vue: 3.5.39(typescript@5.9.3)
@@ -18318,7 +18322,7 @@ snapshots:
       webpack-dev-middleware: 5.3.4(webpack@5.108.4)
       ws: 8.21.0
     optionalDependencies:
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - bufferutil
       - debug
