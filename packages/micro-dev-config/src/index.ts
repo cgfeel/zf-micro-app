@@ -1,4 +1,4 @@
-import start from "./commands/start.ts";
+import serve from "./commands/server.ts";
 import build from "./commands/build.ts";
 
 const args = process.argv.slice(2);
@@ -6,8 +6,8 @@ const command = args[0];
 
 async function main() {
   switch(command) {
-    case "start":
-      await start(args.slice(1));
+    case "serve":
+      await serve(args.slice(1));
       break;
     case "build":
       await build(args.slice(1));
@@ -18,7 +18,7 @@ micro-cli
 
 Usage:
 
-  micro-cli start
+  micro-cli server
   micro-cli build
 
 Commands:

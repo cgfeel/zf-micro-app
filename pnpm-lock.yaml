@@ -399,6 +399,9 @@ importers:
 
   apps/single-spa/single-spa-raw:
     devDependencies:
+      '@event-chat/micro-dev-config':
+        specifier: ^0.0.4
+        version: 0.0.4(tslib@2.8.1)
       html-webpack-plugin:
         specifier: ^5.6.0
         version: 5.6.7(webpack@5.108.4)
@@ -1619,6 +1622,10 @@ packages:
   '@eslint/plugin-kit@0.4.1':
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@event-chat/micro-dev-config@0.0.4':
+    resolution: {integrity: sha512-8qsHlnMk9/9vIexxoAIt/A69YT6qjjUxZ2l6B6Jz1Nir0hwHa0sAU7LMjK8mHwYj/mauY3leyAp+AnMOXjh6Cw==}
+    hasBin: true
 
   '@google-automations/git-file-utils@3.0.1':
     resolution: {integrity: sha512-vlQZ8DlBcippB5zTY0M5Rib8tKT4yQ7oBKbs6kcWAzp70oyillKinXLZwlIgNTmfzzZx1J6cez3M0EmrpXFRcw==}
@@ -9547,6 +9554,34 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
+  '@event-chat/micro-dev-config@0.0.4(tslib@2.8.1)':
+    dependencies:
+      prettier: 3.9.4
+      typescript: 5.9.3
+      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
+      webpack-dev-server: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
+    transitivePeerDependencies:
+      - '@minify-html/node'
+      - '@swc/core'
+      - '@swc/css'
+      - '@swc/html'
+      - '@webpack-cli/generators'
+      - bufferutil
+      - clean-css
+      - cssnano
+      - csso
+      - debug
+      - esbuild
+      - html-minifier-terser
+      - lightningcss
+      - postcss
+      - supports-color
+      - tslib
+      - uglify-js
+      - utf-8-validate
+      - webpack-bundle-analyzer
+
   '@google-automations/git-file-utils@3.0.1':
     dependencies:
       '@octokit/rest': 20.1.2
@@ -11283,7 +11318,7 @@ snapshots:
       fs-extra: 9.1.0
       globby: 11.1.0
       hash-sum: 2.0.0
-      html-webpack-plugin: 5.6.7(webpack@5.108.4(postcss@8.5.16))
+      html-webpack-plugin: 5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
       is-file-esm: 1.0.0
       launch-editor-middleware: 2.14.1
       lodash.defaultsdeep: 4.6.1
@@ -14246,7 +14281,7 @@ snapshots:
 
   html-tags@2.0.0: {}
 
-  html-webpack-plugin@5.6.7(webpack@5.108.4(postcss@8.5.16)):
+  html-webpack-plugin@5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -16556,7 +16591,7 @@ snapshots:
       eslint-webpack-plugin: 3.2.0(eslint@9.39.4(jiti@1.21.7))(webpack@5.108.4(postcss@8.5.16))
       file-loader: 6.2.0(webpack@5.108.4(postcss@8.5.16))
       fs-extra: 10.1.0
-      html-webpack-plugin: 5.6.7(webpack@5.108.4(postcss@8.5.16))
+      html-webpack-plugin: 5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
       identity-obj-proxy: 3.0.0
       jest: 27.5.1
       jest-resolve: 27.5.1
