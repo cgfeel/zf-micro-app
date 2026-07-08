@@ -1,0 +1,68 @@
+name: Monorepo Micro FrontEnd CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # 更新 release
+  release-please:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    outputs:
+      # 输出每个子包的独立发布状态和Tag
+      micro-dev-config--release_created: ${{ steps.release.outputs['packages/micro-dev-config--release_created'] }}
+      micro-dev-config--tag_name: ${{ steps.release.outputs['packages/micro-dev-config--tag_name'] }}
+      micro-dev-config--version: ${{ steps.release.outputs['packages/micro-dev-config--version'] }}
+      releases_created: ${{ steps.release.outputs.releases_created }}
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+          include-component-in-tag: true
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - name: Print release outputs for debugging
+        continue-on-error: true
+        run: |
+          echo "Release outputs (write to file first):"
+          # 方案1：将JSON输出到文件，再cat查看（推荐，避免特殊字符解析）
+          echo '${{ toJson(steps.release.outputs) }}' > release-outputs.json
+          cat release-outputs.json
+
+  # 调整：发布到 npm（仅发布有更新的子包）
+  publish-to-npm:
+    needs: [release-please]
+    runs-on: ubuntu-latest
+    # 只要有任意子包发布，就触发该作业
+    if: ${{ needs.release-please.outputs.releases_created == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          registry-url: https://registry.npmjs.org
+
+      # 仅发布micro-dev-config（如果该包有更新）
+      - name: Publish micro-dev-config to npm
+        if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @event-chat/micro-dev-config publish --access public --no-git-checks --report-summary
