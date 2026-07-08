@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "levi<cgfeel@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.25.0",
+  "devDependencies": {
+    "release-please": "^17.10.2"
+  }
 }
