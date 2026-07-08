@@ -1,4 +1,4 @@
-import serve from "./commands/server.ts";
+import serve from "./commands/serve.ts";
 import build from "./commands/build.ts";
 
 const args = process.argv.slice(2);
