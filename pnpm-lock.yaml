@@ -400,26 +400,14 @@ importers:
   apps/single-spa/single-spa-raw:
     devDependencies:
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.4
-        version: 0.0.4(tslib@2.8.1)
+        specifier: ^0.0.5
+        version: 0.0.5
       html-webpack-plugin:
         specifier: ^5.6.0
         version: 5.6.7(webpack@5.108.4)
       ts-loader:
         specifier: ^9.5.1
         version: 9.6.2(loader-utils@3.3.1)(typescript@5.9.3)(webpack@5.108.4)
-      typescript:
-        specifier: ^5.4.5
-        version: 5.9.3
-      webpack:
-        specifier: ^5.91.0
-        version: 5.108.4(webpack-cli@5.1.4)
-      webpack-cli:
-        specifier: ^5.1.4
-        version: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
-      webpack-dev-server:
-        specifier: ^5.0.4
-        version: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
 
   apps/single-spa/substrate:
     dependencies:
@@ -1623,8 +1611,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@event-chat/micro-dev-config@0.0.4':
-    resolution: {integrity: sha512-8qsHlnMk9/9vIexxoAIt/A69YT6qjjUxZ2l6B6Jz1Nir0hwHa0sAU7LMjK8mHwYj/mauY3leyAp+AnMOXjh6Cw==}
+  '@event-chat/micro-dev-config@0.0.5':
+    resolution: {integrity: sha512-X0Oa30kRaAJsFks5sN4ckQdnxMgw8UWkyZWibkay8ExtMzY13IhYmfDoigC7JLdm9AXL7tzSTXOJ0fI1WGl+Qw==}
     hasBin: true
 
   '@google-automations/git-file-utils@3.0.1':
@@ -9554,13 +9542,13 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@event-chat/micro-dev-config@0.0.4(tslib@2.8.1)':
+  '@event-chat/micro-dev-config@0.0.5':
     dependencies:
       prettier: 3.9.4
       typescript: 5.9.3
       webpack: 5.108.4(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
-      webpack-dev-server: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
+      webpack-dev-server: 5.2.6(webpack-cli@5.1.4)(webpack@5.108.4)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -10165,7 +10153,7 @@ snapshots:
       webpack: 5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)
     optionalDependencies:
       type-fest: 3.13.1
-      webpack-dev-server: 4.15.2(webpack@5.108.4(postcss@8.5.16))
+      webpack-dev-server: 4.15.2(debug@4.4.3)(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
 
   '@polka/url@1.0.0-next.29': {}
 
@@ -14299,7 +14287,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.3.3
     optionalDependencies:
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   htmlparser2@6.1.0:
     dependencies:
@@ -15501,13 +15489,16 @@ snapshots:
       cssnano: 5.1.15(postcss@8.5.16)
       postcss: 8.5.16
 
-  minimizer-webpack-plugin@5.6.1(webpack@5.108.4):
+  minimizer-webpack-plugin@5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
+    optionalDependencies:
+      cssnano: 5.1.15(postcss@8.5.16)
+      postcss: 8.5.16
 
   minipass@3.3.6:
     dependencies:
@@ -16616,7 +16607,7 @@ snapshots:
       tailwindcss: 3.4.19(yaml@2.9.0)
       terser-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
       webpack: 5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)
-      webpack-dev-server: 4.15.2(webpack@5.108.4(postcss@8.5.16))
+      webpack-dev-server: 4.15.2(debug@4.4.3)(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
       webpack-manifest-plugin: 4.1.1(webpack@5.108.4(postcss@8.5.16))
       workbox-webpack-plugin: 6.6.0(@types/babel__core@7.20.5)(webpack@5.108.4(postcss@8.5.16))
     optionalDependencies:
@@ -17685,7 +17676,7 @@ snapshots:
       picomatch: 4.0.5
       source-map: 0.7.6
       typescript: 5.9.3
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
     optionalDependencies:
       loader-utils: 3.3.1
 
@@ -18284,6 +18275,19 @@ snapshots:
     transitivePeerDependencies:
       - tslib
 
+  webpack-dev-middleware@7.4.5(webpack@5.108.4):
+    dependencies:
+      colorette: 2.0.20
+      memfs: 4.57.8(tslib@2.8.1)
+      mime-types: 3.0.2
+      on-finished: 2.4.1
+      range-parser: 1.3.0
+      schema-utils: 4.3.3
+    optionalDependencies:
+      webpack: 5.108.4(webpack-cli@4.10.0)
+    transitivePeerDependencies:
+      - tslib
+
   webpack-dev-server@4.15.2(debug@4.4.3)(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)):
     dependencies:
       '@types/bonjour': 3.5.13
@@ -18405,46 +18409,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  webpack-dev-server@4.15.2(webpack@5.108.4(postcss@8.5.16)):
-    dependencies:
-      '@types/bonjour': 3.5.13
-      '@types/connect-history-api-fallback': 1.5.4
-      '@types/express': 4.17.25
-      '@types/serve-index': 1.9.4
-      '@types/serve-static': 1.15.10
-      '@types/sockjs': 0.3.36
-      '@types/ws': 8.18.1
-      ansi-html-community: 0.0.8
-      bonjour-service: 1.4.2
-      chokidar: 3.6.0
-      colorette: 2.0.20
-      compression: 1.8.1
-      connect-history-api-fallback: 2.0.0
-      default-gateway: 6.0.3
-      express: 4.22.2
-      graceful-fs: 4.2.11
-      html-entities: 2.6.0
-      http-proxy-middleware: 2.0.10(@types/express@4.17.25)(debug@4.4.3)
-      ipaddr.js: 2.4.0
-      launch-editor: 2.14.1
-      open: 8.4.2
-      p-retry: 4.6.2
-      rimraf: 3.0.2
-      schema-utils: 4.3.3
-      selfsigned: 2.4.1
-      serve-index: 1.9.2
-      sockjs: 0.3.24
-      spdy: 4.0.2
-      webpack-dev-middleware: 5.3.4(webpack@5.108.4(postcss@8.5.16))
-      ws: 8.21.0
-    optionalDependencies:
-      webpack: 5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)
-    transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - supports-color
-      - utf-8-validate
-
   webpack-dev-server@5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4):
     dependencies:
       '@types/bonjour': 3.5.13
@@ -18477,6 +18441,46 @@ snapshots:
       ws: 8.21.0
     optionalDependencies:
       webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - supports-color
+      - tslib
+      - utf-8-validate
+
+  webpack-dev-server@5.2.6(webpack-cli@5.1.4)(webpack@5.108.4):
+    dependencies:
+      '@types/bonjour': 3.5.13
+      '@types/connect-history-api-fallback': 1.5.4
+      '@types/express': 4.17.25
+      '@types/express-serve-static-core': 4.19.8
+      '@types/serve-index': 1.9.4
+      '@types/serve-static': 1.15.10
+      '@types/sockjs': 0.3.36
+      '@types/ws': 8.18.1
+      ansi-html-community: 0.0.8
+      bonjour-service: 1.4.2
+      chokidar: 3.6.0
+      colorette: 2.0.20
+      compression: 1.8.1
+      connect-history-api-fallback: 2.0.0
+      express: 4.22.2
+      graceful-fs: 4.2.11
+      http-proxy-middleware: 2.0.10(@types/express@4.17.25)(debug@4.4.3)
+      ipaddr.js: 2.4.0
+      launch-editor: 2.14.1
+      open: 10.2.0
+      p-retry: 6.2.1
+      schema-utils: 4.3.3
+      selfsigned: 5.5.0
+      serve-index: 1.9.2
+      sockjs: 0.3.24
+      spdy: 4.0.2
+      webpack-dev-middleware: 7.4.5(webpack@5.108.4)
+      ws: 8.21.0
+    optionalDependencies:
+      webpack: 5.108.4(webpack-cli@4.10.0)
       webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
     transitivePeerDependencies:
       - bufferutil
@@ -18567,7 +18571,7 @@ snapshots:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.4)
+      minimizer-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
@@ -18607,7 +18611,7 @@ snapshots:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.4)
+      minimizer-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
