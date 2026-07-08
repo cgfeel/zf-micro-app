@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.2...micro-dev-config@v0.0.3) (2026-07-08)
+
+
+### Bug Fixes
+
+* update package ([35c5001](https://github.com/cgfeel/zf-micro-app/commit/35c50012ebe502499564a4eb85a2173e8ee77892))
+* update package ([c17d18e](https://github.com/cgfeel/zf-micro-app/commit/c17d18ee9e684435ceba23aba842583262f9c8d9))
+
 ## [0.0.2](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.1...micro-dev-config@v0.0.2) (2026-07-08)
 
 
