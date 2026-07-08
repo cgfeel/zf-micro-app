@@ -3,18 +3,16 @@ name: Monorepo Micro FrontEnd CI
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
-permissions:
-  contents: write
-  pull-requests: write
+permissions: {}
 
 jobs:
-  # 更新 release
   release-please:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     outputs:
       # 输出每个子包的独立发布状态和Tag
       micro-dev-config--release_created: ${{ steps.release.outputs['packages/micro-dev-config--release_created'] }}
@@ -22,6 +20,12 @@ jobs:
       micro-dev-config--version: ${{ steps.release.outputs['packages/micro-dev-config--version'] }}
       releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+          fetch-depth: 0
+          
       - uses: googleapis/release-please-action@v4
         id: release
         with:
@@ -41,6 +45,9 @@ jobs:
   publish-to-npm:
     needs: [release-please]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     # 只要有任意子包发布，就触发该作业
     if: ${{ needs.release-please.outputs.releases_created == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
@@ -48,6 +55,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PACKAGES_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ needs.release-please.outputs.micro-dev-config--tag_name }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -57,10 +66,33 @@ jobs:
         with:
           node-version: 22.x
           registry-url: https://registry.npmjs.org
+          cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
+          
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --prefer-offline
+
+      - name: Verify version
+        run: pnpm --filter @event-chat/micro-dev-config exec node -p "require('./package.json').version"
+
+      - name: Build project
+        run: pnpm --filter @event-chat/micro-dev-config... build
+
+      - name: Check publish contents
+        if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
+        run: |
+          pnpm --filter @event-chat/micro-dev-config publish \
+          --dry-run \
+          --no-git-checks
 
       # 仅发布micro-dev-config（如果该包有更新）
       - name: Publish micro-dev-config to npm
         if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --filter @event-chat/micro-dev-config publish --access public --no-git-checks --report-summary
+        run: |
+          pnpm --filter @event-chat/micro-dev-config publish \
+          --access public \
+          --provenance \
+          --no-git-checks \
+          --report-summary
