@@ -10,6 +10,10 @@
   "bin": {
     "micro-cli": "./dist/bin/micro-cli.js"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./helpers": "./dist/helpers.js"
+  },
   "keywords": [
     "micro app",
     "dev"
