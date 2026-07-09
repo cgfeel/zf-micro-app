@@ -1,51 +1,68 @@
 [submodule "single-spa/react-project"]
 	path = apps/single-spa/react-project
 	url = git@github.com:cgfeel/micro-single-app-react.git
+	ignore = dirty
 [submodule "single-spa/single-spa-raw"]
 	path = apps/single-spa/single-spa-raw
 	url = git@github.com:cgfeel/micro-single-spa-app.git
+	ignore = dirty
 [submodule "single-spa/substrate"]
 	path = apps/single-spa/substrate
 	url = git@github.com:cgfeel/micro-single-app-substrate.git
+	ignore = dirty
 [submodule "single-spa/vue-project"]
 	path = apps/single-spa/vue-project
 	url = git@github.com:cgfeel/micro-single-app-vue.git
+	ignore = dirty
 [submodule "systemjs"]
 	path = apps/systemjs
 	url = git@github.com:cgfeel/micro-systemjs.git
+	ignore = dirty
 [submodule "qiankun/substrate"]
 	path = apps/qiankun/substrate
 	url = git@github.com:cgfeel/micro-qiankun-substrate.git
+	ignore = dirty
 [submodule "qiankun/react-project"]
 	path = apps/qiankun/react-project
 	url = git@github.com:cgfeel/micro-qiankun-app-cra.git
+	ignore = dirty
 [submodule "qiankun/static-project"]
 	path = apps/qiankun/static-project
 	url = git@github.com:cgfeel/micro-qiankun-app-static.git
+	ignore = dirty
 [submodule "qiankun/vue-project"]
 	path = apps/qiankun/vue-project
 	url = git@github.com:cgfeel/micro-qiankun-app-vue3.git
+	ignore = dirty
 [submodule "micro-app/react-project"]
 	path = apps/micro-app/react-project
 	url = git@github.com:cgfeel/micro-app-react-project.git
+	ignore = dirty
 [submodule "micro-app/substrate"]
 	path = apps/micro-app/substrate
 	url = git@github.com:cgfeel/micro-app-substrate.git
+	ignore = dirty
 [submodule "micro-app/vue-project"]
 	path = apps/micro-app/vue-project
 	url = git@github.com:cgfeel/micro-app-vue-project.git
+	ignore = dirty
 [submodule "micro-app/static-project"]
 	path = apps/micro-app/static-project
 	url = git@github.com:cgfeel/micro-app-static-project.git
+	ignore = dirty
 [submodule "wujie/substrate"]
 	path = apps/wujie/substrate
 	url = git@github.com:cgfeel/micro-wujie-substrate.git
+	ignore = dirty
 [submodule "wujie/react-project"]
 	path = apps/wujie/react-project
 	url = git@github.com:cgfeel/micro-wujie-app-cra.git
+	ignore = dirty
 [submodule "wujie/vue-project"]
 	path = apps/wujie/vue-project
 	url = git@github.com:cgfeel/micro-wujie-app-vue3.git
+	ignore = dirty
 [submodule "wujie/static-project"]
 	path = apps/wujie/static-project
 	url = git@github.com:cgfeel/micro-wujie-app-static.git
+	ignore = dirty
