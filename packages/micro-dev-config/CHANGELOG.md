@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.5...micro-dev-config@v0.0.6) (2026-07-09)
+
+
+### Bug Fixes
+
+* add ts-load ([cccf527](https://github.com/cgfeel/zf-micro-app/commit/cccf527ce3b837d862a9d9da799c7ed14f4bace7))
+* add ts-load ([f8e0c86](https://github.com/cgfeel/zf-micro-app/commit/f8e0c86285a58c5341275beb3f8a9ffdadeeaee9))
+
 ## [0.0.5](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.4...micro-dev-config@v0.0.5) (2026-07-08)
 
 
