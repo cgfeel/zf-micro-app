@@ -2,6 +2,8 @@ import { createRequire } from 'node:module'
 
 const requireFromCLI = createRequire(import.meta.url)
 
+export const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 /**
  * 返回 loader 的绝对路径
  */
