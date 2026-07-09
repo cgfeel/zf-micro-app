@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.12](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.11...micro-dev-config@v0.0.12) (2026-07-09)
+
+
+### Bug Fixes
+
+* remove peerDependencies ([69f2823](https://github.com/cgfeel/zf-micro-app/commit/69f28234eee85382e0122f6a7e307598080bba77))
+* remove peerDependencies ([50bd405](https://github.com/cgfeel/zf-micro-app/commit/50bd4053ee2a634060e5688f0f8127051447a231))
+
 ## [0.0.11](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.10...micro-dev-config@v0.0.11) (2026-07-09)
 
 
