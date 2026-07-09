@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.7](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.6...micro-dev-config@v0.0.7) (2026-07-09)
+
+
+### Bug Fixes
+
+* add helpers ([3dc8c93](https://github.com/cgfeel/zf-micro-app/commit/3dc8c932012155f6211c8052dc2910aad6a8fbb9))
+* add helpers ([69cd956](https://github.com/cgfeel/zf-micro-app/commit/69cd9566b0308f7cca2c66a008f8f5eb4684ea85))
+
 ## [0.0.6](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.5...micro-dev-config@v0.0.6) (2026-07-09)
 
 
