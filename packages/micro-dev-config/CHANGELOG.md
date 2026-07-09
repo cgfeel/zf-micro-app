@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.13](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.12...micro-dev-config@v0.0.13) (2026-07-09)
+
+
+### Bug Fixes
+
+* add peer ts ([64b2c6f](https://github.com/cgfeel/zf-micro-app/commit/64b2c6fafd9ea501c6eee1dd2b8a933d34db7e33))
+* add peer ts ([7e23f2b](https://github.com/cgfeel/zf-micro-app/commit/7e23f2bba8bc657d756280e66970e0f3cf3209ae))
+
 ## [0.0.12](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.11...micro-dev-config@v0.0.12) (2026-07-09)
 
 
