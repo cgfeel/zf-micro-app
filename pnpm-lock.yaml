@@ -409,8 +409,14 @@ importers:
   apps/single-spa/single-spa-raw:
     devDependencies:
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.10
-        version: 0.0.10(loader-utils@3.3.1)
+        specifier: ^0.0.12
+        version: 0.0.12(loader-utils@3.3.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@types/node':
+        specifier: ^16.18.126
+        version: 16.18.126
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   apps/single-spa/substrate:
     dependencies:
@@ -1687,8 +1693,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@event-chat/micro-dev-config@0.0.10':
-    resolution: {integrity: sha512-YfPsudaZSwU73eGMn8MCl3+T9zLobXI+pnZybCuqY1lHTFRjWh+X5b1ZzlpA+bybO0nx5A/eBoxEmTnLE64VZw==}
+  '@event-chat/micro-dev-config@0.0.12':
+    resolution: {integrity: sha512-hH5eanig8H73GTVT6eSf1Y+nxL0FzoCKQsc8hfeLc24P86lHp1PyGf67cYih6JJYqoBSK8HXWgrgdlxKTX2Xgw==}
     hasBin: true
 
   '@event-chat/micro-dev-config@0.0.9':
@@ -9854,12 +9860,10 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@event-chat/micro-dev-config@0.0.10(loader-utils@3.3.1)':
+  '@event-chat/micro-dev-config@0.0.12(loader-utils@3.3.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
-      prettier: 3.9.4
       ts-loader: 9.6.2(loader-utils@3.3.1)(typescript@5.9.3)(webpack@5.108.4)
-      typescript: 5.9.3
       webpack: 5.108.4(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
       webpack-dev-server: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
@@ -9882,6 +9886,7 @@ snapshots:
       - postcss
       - supports-color
       - tslib
+      - typescript
       - uglify-js
       - utf-8-validate
       - webpack-bundle-analyzer
