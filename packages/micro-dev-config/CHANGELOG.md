@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.9](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.8...micro-dev-config@v0.0.9) (2026-07-09)
+
+
+### Bug Fixes
+
+* update request to requireFromCLI ([f76a0f0](https://github.com/cgfeel/zf-micro-app/commit/f76a0f0e446421f6ff6f80ca69bd81b72e88d597))
+* update request to requireFromCLI ([a4a149d](https://github.com/cgfeel/zf-micro-app/commit/a4a149dca84fecce4f999e49230acd4d8692413a))
+
 ## [0.0.8](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.7...micro-dev-config@v0.0.8) (2026-07-09)
 
 
