@@ -12,7 +12,8 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./helpers": "./dist/helpers.js"
+    "./helpers": "./dist/helpers.js",
+    "./tsconfig": "./tsconfig.json"
   },
   "keywords": [
     "micro app",
