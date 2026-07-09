@@ -40,5 +40,8 @@
   "devDependencies": {
     "@types/node": "^16.18.126",
     "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
   }
 }
