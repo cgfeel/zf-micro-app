@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.10](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.9...micro-dev-config@v0.0.10) (2026-07-09)
+
+
+### Bug Fixes
+
+* add micro cli tsconfig ([e4a4f10](https://github.com/cgfeel/zf-micro-app/commit/e4a4f1040c407ed071ed6cedade96888552a30a7))
+* add micro cli tsconfig ([d2e6dbd](https://github.com/cgfeel/zf-micro-app/commit/d2e6dbdc858501858f347275ad7d30ea1ecb99d4))
+
 ## [0.0.9](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.8...micro-dev-config@v0.0.9) (2026-07-09)
 
 
