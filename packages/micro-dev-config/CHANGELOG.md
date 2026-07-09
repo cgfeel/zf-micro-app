@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.8](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.7...micro-dev-config@v0.0.8) (2026-07-09)
+
+
+### Bug Fixes
+
+* add html-loader to micro-cli ([80ebc5e](https://github.com/cgfeel/zf-micro-app/commit/80ebc5e81d81010f5a137ecac211c93f094bcf95))
+* add html-loader to micro-cli ([1f6baba](https://github.com/cgfeel/zf-micro-app/commit/1f6babae2d3c5a412fbc4dd0fc63b7292870bda1))
+
 ## [0.0.7](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.6...micro-dev-config@v0.0.7) (2026-07-09)
 
 
