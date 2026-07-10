@@ -1,9 +1,13 @@
 import { createRequire } from 'node:module'
+import CopyPlugin from 'copy-webpack-plugin'
 import webpack from 'webpack'
 
 const requireFromCLI = createRequire(import.meta.url)
 
 export const HtmlWebpackPlugin = requireFromCLI('html-webpack-plugin')
+export function copyPlugin(patterns: CopyPlugin.Pattern[]) {
+  return new CopyPlugin({ patterns })
+}
 
 export function defineEnvPlugin(env: PluginEnvType, defineRecord: PluginDefineType = {}) {
   return new webpack.DefinePlugin({
