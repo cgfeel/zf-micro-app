@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.14](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.13...micro-dev-config@v0.0.14) (2026-07-10)
+
+
+### Bug Fixes
+
+* add defineEnvPlugin ([bb5a513](https://github.com/cgfeel/zf-micro-app/commit/bb5a513bfa724565f263a1017992527c43eab383))
+* add defineEnvPlugin ([ff5a6c6](https://github.com/cgfeel/zf-micro-app/commit/ff5a6c6062e29a8b32047e3d03a658c2187c1ac5))
+
 ## [0.0.13](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.12...micro-dev-config@v0.0.13) (2026-07-09)
 
 
