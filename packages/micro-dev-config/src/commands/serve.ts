@@ -1,5 +1,5 @@
-import { runWebpack } from "../webpack.ts";
+import { runWebpack } from '../webpack.ts'
 
 export default function serve(args: string[]) {
-  return runWebpack(["serve"].concat(args));
+  return runWebpack(['serve'].concat(args))
 }
