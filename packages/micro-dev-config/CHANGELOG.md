@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.15](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.14...micro-dev-config@v0.0.15) (2026-07-10)
+
+
+### Bug Fixes
+
+* add prettier ([4b0d928](https://github.com/cgfeel/zf-micro-app/commit/4b0d9287ddb47a64f86f48bc6d23c1fff7660a2f))
+* add prettier ([20d0e0c](https://github.com/cgfeel/zf-micro-app/commit/20d0e0c73d43d38f0560e4abaa2eede6b0641199))
+
 ## [0.0.14](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.13...micro-dev-config@v0.0.14) (2026-07-10)
 
 
