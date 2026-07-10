@@ -1,6 +1,6 @@
 {
   "name": "@event-chat/micro-dev-config",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "统一微前端开发环境",
   "type": "module",
   "scripts": {
