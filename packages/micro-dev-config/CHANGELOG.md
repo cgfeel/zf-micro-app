@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.16](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.15...micro-dev-config@v0.0.16) (2026-07-10)
+
+
+### Bug Fixes
+
+* add copyPlugin ([fbd8ccc](https://github.com/cgfeel/zf-micro-app/commit/fbd8ccc3e8909e6486e78ce07af3600f534980ef))
+* add copyPlugin ([d67cf68](https://github.com/cgfeel/zf-micro-app/commit/d67cf6821759845230b3be7670398d3c031f4471))
+
 ## [0.0.15](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.14...micro-dev-config@v0.0.15) (2026-07-10)
 
 
