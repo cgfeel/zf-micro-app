@@ -415,8 +415,8 @@ importers:
   apps/single-spa/single-spa-raw:
     devDependencies:
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.14
-        version: 0.0.14(loader-utils@3.3.1)(typescript@5.9.3)
+        specifier: ^0.0.15
+        version: 0.0.15(loader-utils@3.3.1)(tslib@2.8.1)(typescript@5.9.3)
       '@types/node':
         specifier: ^16.18.126
         version: 16.18.126
@@ -1699,8 +1699,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@event-chat/micro-dev-config@0.0.14':
-    resolution: {integrity: sha512-lpsNs852b7pQW2amNda9vkbR+fU9MhpL6Sy7jv0/Qcam6Tib5hd3f1vzvcMzQN36EbfYsJuqB+97rKk6hprCDw==}
+  '@event-chat/micro-dev-config@0.0.15':
+    resolution: {integrity: sha512-VmBQ4i8AQ5sfxHqYBe0uSig0xN0EG22h1j6/BF7vQn7DKlKsbkYARBm6dJUut6qgZ2riUqXMqM17eRAXNn+OjQ==}
     hasBin: true
     peerDependencies:
       typescript: ^5.9.3
@@ -9903,7 +9903,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@event-chat/micro-dev-config@0.0.14(loader-utils@3.3.1)(typescript@5.9.3)':
+  '@event-chat/micro-dev-config@0.0.15(loader-utils@3.3.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
       ts-loader: 9.6.2(loader-utils@3.3.1)(typescript@5.9.3)(webpack@5.108.4)
