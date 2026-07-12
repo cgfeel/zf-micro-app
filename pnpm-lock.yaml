@@ -337,8 +337,8 @@ importers:
         specifier: ^7.23.3
         version: 7.29.7
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.17
-        version: 0.0.17(loader-utils@3.3.1)(typescript@6.0.3)
+        specifier: ^0.0.18
+        version: 0.0.18(loader-utils@3.3.1)(typescript@6.0.3)
       '@testing-library/jest-dom':
         specifier: ^6.9.1
         version: 6.9.1
@@ -1717,8 +1717,8 @@ packages:
     peerDependencies:
       typescript: ^5.9.3
 
-  '@event-chat/micro-dev-config@0.0.17':
-    resolution: {integrity: sha512-4IwYI40aSOZjBtmj0LE1Iiv3NXMaF7IWUj04JJMqVSNJCB9+hSSuw6+IxTB62nFV0gm5cTAMzJ8yjYOFl34g8Q==}
+  '@event-chat/micro-dev-config@0.0.18':
+    resolution: {integrity: sha512-+0MuA+ucdI/0DTsvNoK09zmgzzMZuphl79015v9FKJDyJzmoip6xlYX/wKfvCbR4Cbx1I9w2wzOkUb/DqchXEA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.9.3
@@ -9963,7 +9963,7 @@ snapshots:
       - utf-8-validate
       - webpack-bundle-analyzer
 
-  '@event-chat/micro-dev-config@0.0.17(loader-utils@3.3.1)(typescript@6.0.3)':
+  '@event-chat/micro-dev-config@0.0.18(loader-utils@3.3.1)(typescript@6.0.3)':
     dependencies:
       copy-webpack-plugin: 14.0.0(webpack@5.108.4)
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
