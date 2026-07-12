@@ -13,6 +13,9 @@ class GenerateImportMapPlugin {
   }
 
   apply(compiler: Compiler) {
+    const name = this.moduleName
+    if (!name) return
+
     const hooks = compiler.hooks.thisCompilation
     hooks.tap('GenerateImportMapPlugin', (compilation) => {
       compilation.hooks.processAssets.tap(
@@ -21,13 +24,9 @@ class GenerateImportMapPlugin {
           stage: compiler.webpack.Compilation.PROCESS_ASSETS_STAGE_REPORT,
         },
         () => {
-          const jsFile = Object.keys(compilation.assets).find(this.findHandle)
-          if (jsFile) {
-            const manifest = {
-              name: this.moduleName,
-              file: jsFile,
-            }
-
+          const file = Object.keys(compilation.assets).find(this.findHandle)
+          if (file) {
+            const manifest = { file, name }
             compilation.emitAsset(
               this.output,
               new compiler.webpack.sources.RawSource(JSON.stringify(manifest, null, 2))
