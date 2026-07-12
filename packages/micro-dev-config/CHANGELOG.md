@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.19](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.18...micro-dev-config@v0.0.19) (2026-07-12)
+
+
+### Bug Fixes
+
+* split moduleName empty ([b0b556d](https://github.com/cgfeel/zf-micro-app/commit/b0b556d0f04ba0a1ee2ba21b6f791f92d35904a5))
+* split moduleName empty ([9e6abf9](https://github.com/cgfeel/zf-micro-app/commit/9e6abf9db7d4ced19d5ace6cd8d8f2e0a1f250ba))
+
 ## [0.0.18](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.17...micro-dev-config@v0.0.18) (2026-07-12)
 
 
