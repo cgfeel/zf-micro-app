@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.20](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.19...micro-dev-config@v0.0.20) (2026-07-12)
+
+
+### Bug Fixes
+
+* update cli provider default command ([23a5304](https://github.com/cgfeel/zf-micro-app/commit/23a5304b8f8e930d85a56c0742485efb9b0a0128))
+* update cli provider default command ([d060084](https://github.com/cgfeel/zf-micro-app/commit/d060084ec6974401457320952951b00823d822b6))
+
 ## [0.0.19](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.18...micro-dev-config@v0.0.19) (2026-07-12)
 
 
