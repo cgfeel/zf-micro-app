@@ -13,7 +13,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./helpers": "./dist/helpers.js",
-    "./plugin": "./dist/plugin.js",
+    "./plugins": "./dist/plugin.js",
     "./tsconfig": "./tsconfig.json"
   },
   "keywords": [
