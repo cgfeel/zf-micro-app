@@ -337,8 +337,8 @@ importers:
         specifier: ^7.23.3
         version: 7.29.7
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.16
-        version: 0.0.16(loader-utils@3.3.1)(typescript@6.0.3)
+        specifier: ^0.0.17
+        version: 0.0.17(loader-utils@3.3.1)(typescript@6.0.3)
       '@testing-library/jest-dom':
         specifier: ^6.9.1
         version: 6.9.1
@@ -1713,6 +1713,12 @@ packages:
 
   '@event-chat/micro-dev-config@0.0.16':
     resolution: {integrity: sha512-VoCEa5UUmAh7qfxGp09tCyqlYIfBkc03h0kcM+wS0HQL+bYECHjKq3Y6PEaQE/M6hP/+Yd3EIWgazbtYV1nBnA==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.9.3
+
+  '@event-chat/micro-dev-config@0.0.17':
+    resolution: {integrity: sha512-4IwYI40aSOZjBtmj0LE1Iiv3NXMaF7IWUj04JJMqVSNJCB9+hSSuw6+IxTB62nFV0gm5cTAMzJ8yjYOFl34g8Q==}
     hasBin: true
     peerDependencies:
       typescript: ^5.9.3
@@ -9957,7 +9963,7 @@ snapshots:
       - utf-8-validate
       - webpack-bundle-analyzer
 
-  '@event-chat/micro-dev-config@0.0.16(loader-utils@3.3.1)(typescript@6.0.3)':
+  '@event-chat/micro-dev-config@0.0.17(loader-utils@3.3.1)(typescript@6.0.3)':
     dependencies:
       copy-webpack-plugin: 14.0.0(webpack@5.108.4)
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
@@ -11900,7 +11906,7 @@ snapshots:
       fs-extra: 9.1.0
       globby: 11.1.0
       hash-sum: 2.0.0
-      html-webpack-plugin: 5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
+      html-webpack-plugin: 5.6.7(webpack@5.108.4(postcss@8.5.16))
       is-file-esm: 1.0.0
       launch-editor-middleware: 2.14.1
       lodash.defaultsdeep: 4.6.1
@@ -15132,7 +15138,7 @@ snapshots:
 
   html-tags@2.0.0: {}
 
-  html-webpack-plugin@5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)):
+  html-webpack-plugin@5.6.7(webpack@5.108.4(postcss@8.5.16)):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -15150,7 +15156,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.3.3
     optionalDependencies:
-      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack: 5.108.4(webpack-cli@4.10.0)
 
   htmlparser2@6.1.0:
     dependencies:
@@ -16368,13 +16374,16 @@ snapshots:
       cssnano: 5.1.15(postcss@8.5.16)
       postcss: 8.5.16
 
-  minimizer-webpack-plugin@5.6.1(webpack@5.108.4):
+  minimizer-webpack-plugin@5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
       webpack: 5.108.4(webpack-cli@4.10.0)
+    optionalDependencies:
+      cssnano: 5.1.15(postcss@8.5.16)
+      postcss: 8.5.16
 
   minipass@3.3.6:
     dependencies:
@@ -17479,7 +17488,7 @@ snapshots:
       eslint-webpack-plugin: 3.2.0(eslint@9.39.4(jiti@1.21.7))(webpack@5.108.4(postcss@8.5.16))
       file-loader: 6.2.0(webpack@5.108.4(postcss@8.5.16))
       fs-extra: 10.1.0
-      html-webpack-plugin: 5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
+      html-webpack-plugin: 5.6.7(webpack@5.108.4(postcss@8.5.16))
       identity-obj-proxy: 3.0.0
       jest: 27.5.1
       jest-resolve: 27.5.1
@@ -17574,7 +17583,7 @@ snapshots:
       eslint-webpack-plugin: 3.2.0(eslint@9.39.4(jiti@2.6.1))(webpack@5.108.4(postcss@8.5.16))
       file-loader: 6.2.0(webpack@5.108.4(postcss@8.5.16))
       fs-extra: 10.1.0
-      html-webpack-plugin: 5.6.7(webpack@5.108.4(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16))
+      html-webpack-plugin: 5.6.7(webpack@5.108.4(postcss@8.5.16))
       identity-obj-proxy: 3.0.0
       jest: 27.5.1
       jest-resolve: 27.5.1
@@ -19646,7 +19655,7 @@ snapshots:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.4)
+      minimizer-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
@@ -19686,7 +19695,7 @@ snapshots:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.4)
+      minimizer-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3

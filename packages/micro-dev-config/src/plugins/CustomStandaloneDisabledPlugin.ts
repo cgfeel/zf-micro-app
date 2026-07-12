@@ -4,8 +4,8 @@ import { Compiler } from 'webpack'
 class CustomStandaloneDisabledPlugin {
   replaceHandle?: ReplaceHandleType
 
-  constructor({ handle }: StandalonPluginOptions) {
-    this.replaceHandle = handle
+  constructor(props?: StandalonPluginOptions) {
+    this.replaceHandle = props?.handle
   }
 
   apply(compiler: Compiler) {

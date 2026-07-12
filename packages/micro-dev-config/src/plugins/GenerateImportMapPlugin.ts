@@ -5,7 +5,8 @@ class GenerateImportMapPlugin {
   output = ''
   moduleName?: string
 
-  constructor({ module, handle, output = 'import-map.json' }: GenerateMapProps) {
+  constructor(props?: GenerateMapProps) {
+    const { module, handle, output = 'import-map.json' } = props ?? {}
     if (handle) this.findHandle = handle
     this.moduleName = module
     this.output = output
