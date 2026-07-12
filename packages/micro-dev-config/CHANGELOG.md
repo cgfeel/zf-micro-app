@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.17](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.16...micro-dev-config@v0.0.17) (2026-07-12)
+
+
+### Bug Fixes
+
+* add plugin ([e853e70](https://github.com/cgfeel/zf-micro-app/commit/e853e701d054cfd720917370f5b6becbf8281a9e))
+* update plugin name ([d2a9d40](https://github.com/cgfeel/zf-micro-app/commit/d2a9d405c4b7e47289f443ea73dc1b7565dc7ac8))
+
 ## [0.0.16](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.15...micro-dev-config@v0.0.16) (2026-07-10)
 
 
