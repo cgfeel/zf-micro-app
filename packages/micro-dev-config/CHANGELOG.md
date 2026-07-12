@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.18](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.17...micro-dev-config@v0.0.18) (2026-07-12)
+
+
+### Bug Fixes
+
+* update plugin props has undefined ([f08b320](https://github.com/cgfeel/zf-micro-app/commit/f08b3208fd93498c8719775e0cf93eecf606add6))
+* update plugin props has undefined ([08265bb](https://github.com/cgfeel/zf-micro-app/commit/08265bbc13f23f578a3b0f4f26ab6ce17d0f1384))
+
 ## [0.0.17](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.16...micro-dev-config@v0.0.17) (2026-07-12)
 
 
