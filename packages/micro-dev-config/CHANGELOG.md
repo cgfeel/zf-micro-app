@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.21](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.20...micro-dev-config@v0.0.21) (2026-07-13)
+
+
+### Bug Fixes
+
+* split plugin ([08232cb](https://github.com/cgfeel/zf-micro-app/commit/08232cbaffaa906e5f9832d7bb5a42eb67263589))
+* split plugin ([7d57e20](https://github.com/cgfeel/zf-micro-app/commit/7d57e20bc84debc3ae71c3e27e87334ad889b375))
+
 ## [0.0.20](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.19...micro-dev-config@v0.0.20) (2026-07-12)
 
 
