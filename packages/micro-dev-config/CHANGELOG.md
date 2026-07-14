@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.23](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.22...micro-dev-config@v0.0.23) (2026-07-14)
+
+
+### Bug Fixes
+
+* update commonjs webpack ([4aa24c9](https://github.com/cgfeel/zf-micro-app/commit/4aa24c9279d12cd97b80672b7319620d61c7568d))
+* update commonjs webpack ([3d99a5d](https://github.com/cgfeel/zf-micro-app/commit/3d99a5d2704b277155a853ec3f5dcfed0df831db))
+
 ## [0.0.22](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.21...micro-dev-config@v0.0.22) (2026-07-14)
 
 
