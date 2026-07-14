@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.22](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.21...micro-dev-config@v0.0.22) (2026-07-14)
+
+
+### Bug Fixes
+
+* add ImportMapPlugin ([e2d8fc5](https://github.com/cgfeel/zf-micro-app/commit/e2d8fc540f2f6240ed74e1634562c7e88595d146))
+* add ImportMapPlugin ([0c77541](https://github.com/cgfeel/zf-micro-app/commit/0c77541d712cec233165d89fdf82251990386c14))
+
 ## [0.0.21](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.20...micro-dev-config@v0.0.21) (2026-07-13)
 
 
