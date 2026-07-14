@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { Compilation, Compiler } from 'webpack'
+import webpack from 'webpack'
+import type { Compilation, Compiler } from 'webpack'
 
 const isImportMapManifest = (data: unknown): data is ImportMapManifest => {
   if (typeof data !== 'object' || data === null) return false
@@ -16,7 +17,7 @@ class ImportMapPlugin {
       compilation.hooks.processAssets.tap(
         {
           name: 'ImportMapPlugin',
-          stage: Compilation.PROCESS_ASSETS_STAGE_REPORT,
+          stage: webpack.Compilation.PROCESS_ASSETS_STAGE_REPORT,
         },
         () => {
           this._generateImportMap(compiler, this._generateInitRecord(compilation), compilation.hash)

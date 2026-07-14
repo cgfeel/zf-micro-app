@@ -443,8 +443,8 @@ importers:
         specifier: ^7.23.3
         version: 7.29.7
       '@event-chat/micro-dev-config':
-        specifier: ^0.0.21
-        version: 0.0.21(loader-utils@3.3.1)(typescript@6.0.3)
+        specifier: ^0.0.22
+        version: 0.0.22(loader-utils@3.3.1)(typescript@6.0.3)
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
@@ -1707,6 +1707,12 @@ packages:
 
   '@event-chat/micro-dev-config@0.0.21':
     resolution: {integrity: sha512-/BN/P5fiOdC89UPltVYx7teN2HeVPdTiY+3L7Msx4uZDlIys0mauwPYFLq1a0995kSHJvWShP409sXwnhZa5aw==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.9.3
+
+  '@event-chat/micro-dev-config@0.0.22':
+    resolution: {integrity: sha512-UZeaQK8Qu9p+/s/JxbMd1dj4N0KREfiXwxs2Q5eJ7jo3ZT3KRxhF8JPtpE9mXA1f+sFuBW6qeRBiIVHkBPTEXA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.9.3
@@ -9979,6 +9985,38 @@ snapshots:
       - webpack-bundle-analyzer
 
   '@event-chat/micro-dev-config@0.0.21(loader-utils@3.3.1)(typescript@6.0.3)':
+    dependencies:
+      copy-webpack-plugin: 14.0.0(webpack@5.108.4)
+      html-webpack-plugin: 5.6.7(webpack@5.108.4)
+      ts-loader: 9.6.2(loader-utils@3.3.1)(typescript@6.0.3)(webpack@5.108.4)
+      typescript: 6.0.3
+      webpack: 5.108.4(webpack-cli@5.1.4)
+      webpack-cli: 5.1.4(webpack-dev-server@5.2.6)(webpack@5.108.4)
+      webpack-dev-server: 5.2.6(tslib@2.8.1)(webpack-cli@5.1.4)(webpack@5.108.4)
+    transitivePeerDependencies:
+      - '@minify-html/node'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@swc/html'
+      - '@webpack-cli/generators'
+      - bufferutil
+      - clean-css
+      - cssnano
+      - csso
+      - debug
+      - esbuild
+      - html-minifier-terser
+      - lightningcss
+      - loader-utils
+      - postcss
+      - supports-color
+      - tslib
+      - uglify-js
+      - utf-8-validate
+      - webpack-bundle-analyzer
+
+  '@event-chat/micro-dev-config@0.0.22(loader-utils@3.3.1)(typescript@6.0.3)':
     dependencies:
       copy-webpack-plugin: 14.0.0(webpack@5.108.4)
       html-webpack-plugin: 5.6.7(webpack@5.108.4)
