@@ -23,6 +23,7 @@ export function defineEnvPlugin(env: PluginEnvType, defineRecord: PluginDefineTy
 
 export { default as CustomStandaloneDisabledPlugin } from './plugins/CustomStandaloneDisabledPlugin.ts'
 export { default as GenerateImportMapPlugin } from './plugins/GenerateImportMapPlugin.ts'
+export { default as ImportMapPlugin } from './plugins/ImportMapPlugin.ts'
 
 type PluginEnvType = { production?: boolean }
 type PluginDefineType = Record<string, unknown>
