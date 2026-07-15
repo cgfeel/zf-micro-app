@@ -1,0 +1,31 @@
+{
+  "name": "@event-chat/single-spa",
+  "version": "0.0.1",
+  "description": "手写一个 single-spa",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "single-spa"
+  ],
+  "author": "Levi <cgfeel@gmail.com> (https://github.com/cgfeel)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgfeel/zf-micro-app"
+  },
+  "bugs": {
+    "url": "https://github.com/cgfeel/zf-micro-app/issues",
+    "email": "cgfeel@gmail.com"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.25.0"
+}

@@ -8,6 +8,10 @@
     "packages/micro-dev-config": {
       "path": "packages/micro-dev-config",
       "release-type": "node"
+    },
+    "packages/single-spa": {
+      "path": "packages/single-spa",
+      "release-type": "node"
     }
   }
 }
