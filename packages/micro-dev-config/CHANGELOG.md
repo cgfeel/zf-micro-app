@@ -1,5 +1,117 @@
 # Changelog
 
+## [0.0.23](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.22...micro-dev-config@v0.0.23) (2026-07-14)
+
+
+### Bug Fixes
+
+* update commonjs webpack ([4aa24c9](https://github.com/cgfeel/zf-micro-app/commit/4aa24c9279d12cd97b80672b7319620d61c7568d))
+* update commonjs webpack ([3d99a5d](https://github.com/cgfeel/zf-micro-app/commit/3d99a5d2704b277155a853ec3f5dcfed0df831db))
+
+## [0.0.22](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.21...micro-dev-config@v0.0.22) (2026-07-14)
+
+
+### Bug Fixes
+
+* add ImportMapPlugin ([e2d8fc5](https://github.com/cgfeel/zf-micro-app/commit/e2d8fc540f2f6240ed74e1634562c7e88595d146))
+* add ImportMapPlugin ([0c77541](https://github.com/cgfeel/zf-micro-app/commit/0c77541d712cec233165d89fdf82251990386c14))
+
+## [0.0.21](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.20...micro-dev-config@v0.0.21) (2026-07-13)
+
+
+### Bug Fixes
+
+* split plugin ([08232cb](https://github.com/cgfeel/zf-micro-app/commit/08232cbaffaa906e5f9832d7bb5a42eb67263589))
+* split plugin ([7d57e20](https://github.com/cgfeel/zf-micro-app/commit/7d57e20bc84debc3ae71c3e27e87334ad889b375))
+
+## [0.0.20](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.19...micro-dev-config@v0.0.20) (2026-07-12)
+
+
+### Bug Fixes
+
+* update cli provider default command ([23a5304](https://github.com/cgfeel/zf-micro-app/commit/23a5304b8f8e930d85a56c0742485efb9b0a0128))
+* update cli provider default command ([d060084](https://github.com/cgfeel/zf-micro-app/commit/d060084ec6974401457320952951b00823d822b6))
+
+## [0.0.19](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.18...micro-dev-config@v0.0.19) (2026-07-12)
+
+
+### Bug Fixes
+
+* split moduleName empty ([b0b556d](https://github.com/cgfeel/zf-micro-app/commit/b0b556d0f04ba0a1ee2ba21b6f791f92d35904a5))
+* split moduleName empty ([9e6abf9](https://github.com/cgfeel/zf-micro-app/commit/9e6abf9db7d4ced19d5ace6cd8d8f2e0a1f250ba))
+
+## [0.0.18](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.17...micro-dev-config@v0.0.18) (2026-07-12)
+
+
+### Bug Fixes
+
+* update plugin props has undefined ([f08b320](https://github.com/cgfeel/zf-micro-app/commit/f08b3208fd93498c8719775e0cf93eecf606add6))
+* update plugin props has undefined ([08265bb](https://github.com/cgfeel/zf-micro-app/commit/08265bbc13f23f578a3b0f4f26ab6ce17d0f1384))
+
+## [0.0.17](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.16...micro-dev-config@v0.0.17) (2026-07-12)
+
+
+### Bug Fixes
+
+* add plugin ([e853e70](https://github.com/cgfeel/zf-micro-app/commit/e853e701d054cfd720917370f5b6becbf8281a9e))
+* update plugin name ([d2a9d40](https://github.com/cgfeel/zf-micro-app/commit/d2a9d405c4b7e47289f443ea73dc1b7565dc7ac8))
+
+## [0.0.16](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.15...micro-dev-config@v0.0.16) (2026-07-10)
+
+
+### Bug Fixes
+
+* add copyPlugin ([fbd8ccc](https://github.com/cgfeel/zf-micro-app/commit/fbd8ccc3e8909e6486e78ce07af3600f534980ef))
+* add copyPlugin ([d67cf68](https://github.com/cgfeel/zf-micro-app/commit/d67cf6821759845230b3be7670398d3c031f4471))
+
+## [0.0.15](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.14...micro-dev-config@v0.0.15) (2026-07-10)
+
+
+### Bug Fixes
+
+* add prettier ([4b0d928](https://github.com/cgfeel/zf-micro-app/commit/4b0d9287ddb47a64f86f48bc6d23c1fff7660a2f))
+* add prettier ([20d0e0c](https://github.com/cgfeel/zf-micro-app/commit/20d0e0c73d43d38f0560e4abaa2eede6b0641199))
+
+## [0.0.14](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.13...micro-dev-config@v0.0.14) (2026-07-10)
+
+
+### Bug Fixes
+
+* add defineEnvPlugin ([bb5a513](https://github.com/cgfeel/zf-micro-app/commit/bb5a513bfa724565f263a1017992527c43eab383))
+* add defineEnvPlugin ([ff5a6c6](https://github.com/cgfeel/zf-micro-app/commit/ff5a6c6062e29a8b32047e3d03a658c2187c1ac5))
+
+## [0.0.13](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.12...micro-dev-config@v0.0.13) (2026-07-09)
+
+
+### Bug Fixes
+
+* add peer ts ([64b2c6f](https://github.com/cgfeel/zf-micro-app/commit/64b2c6fafd9ea501c6eee1dd2b8a933d34db7e33))
+* add peer ts ([7e23f2b](https://github.com/cgfeel/zf-micro-app/commit/7e23f2bba8bc657d756280e66970e0f3cf3209ae))
+
+## [0.0.12](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.11...micro-dev-config@v0.0.12) (2026-07-09)
+
+
+### Bug Fixes
+
+* remove peerDependencies ([69f2823](https://github.com/cgfeel/zf-micro-app/commit/69f28234eee85382e0122f6a7e307598080bba77))
+* remove peerDependencies ([50bd405](https://github.com/cgfeel/zf-micro-app/commit/50bd4053ee2a634060e5688f0f8127051447a231))
+
+## [0.0.11](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.10...micro-dev-config@v0.0.11) (2026-07-09)
+
+
+### Bug Fixes
+
+* add peerDependencies ([23cdb61](https://github.com/cgfeel/zf-micro-app/commit/23cdb61d1c269e968a8423ebeeeabfe6ab7e6e2f))
+* add peerDependencies ([37e8096](https://github.com/cgfeel/zf-micro-app/commit/37e80965f463d530cf371d695c3d0dadc80447f8))
+
+## [0.0.10](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.9...micro-dev-config@v0.0.10) (2026-07-09)
+
+
+### Bug Fixes
+
+* add micro cli tsconfig ([e4a4f10](https://github.com/cgfeel/zf-micro-app/commit/e4a4f1040c407ed071ed6cedade96888552a30a7))
+* add micro cli tsconfig ([d2e6dbd](https://github.com/cgfeel/zf-micro-app/commit/d2e6dbdc858501858f347275ad7d30ea1ecb99d4))
+
 ## [0.0.9](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.8...micro-dev-config@v0.0.9) (2026-07-09)
 
 
