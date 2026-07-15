@@ -31,3 +31,6 @@ jobs:
 
       - name: Build project
         run: pnpm --filter @event-chat/micro-dev-config... build
+
+      - name: Build project
+        run: pnpm --filter @event-chat/single-spa... build

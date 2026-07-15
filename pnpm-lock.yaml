@@ -182,6 +182,18 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1(react-scripts@5.0.1(@babel/plugin-syntax-flow@7.29.7(@babel/core@7.29.7))(@babel/plugin-transform-react-jsx@7.29.7(@babel/core@7.29.7))(@types/babel__core@7.20.5)(@types/webpack@5.28.5)(eslint@9.39.4(jiti@2.6.1))(react@18.3.1)(type-fest@3.13.1)(typescript@4.9.5)(yaml@2.9.0))
 
+  apps/qiankun/static-project:
+    devDependencies:
+      '@babel/preset-env':
+        specifier: ^7.24.6
+        version: 7.29.7(@babel/core@7.29.7)
+      '@babel/preset-react':
+        specifier: ^7.24.6
+        version: 7.29.7(@babel/core@7.29.7)
+      '@event-chat/micro-dev-config':
+        specifier: ^0.0.23
+        version: 0.0.23(loader-utils@3.3.1)(typescript@6.0.3)
+
   apps/qiankun/substrate:
     dependencies:
       '@testing-library/jest-dom':
@@ -730,6 +742,8 @@ importers:
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
+
+  packages/single-spa: {}
 
 packages:
 

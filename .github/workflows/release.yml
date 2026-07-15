@@ -8,7 +8,6 @@ permissions: {}
 
 jobs:
   release-please:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -18,14 +17,16 @@ jobs:
       micro-dev-config--release_created: ${{ steps.release.outputs['packages/micro-dev-config--release_created'] }}
       micro-dev-config--tag_name: ${{ steps.release.outputs['packages/micro-dev-config--tag_name'] }}
       micro-dev-config--version: ${{ steps.release.outputs['packages/micro-dev-config--version'] }}
-      releases_created: ${{ steps.release.outputs.releases_created }}
+      single-spa--release_created: ${{ steps.release.outputs['packages/single-spa--release_created'] }}
+      single-spa--tag_name: ${{ steps.release.outputs['packages/single-spa--tag_name'] }}
+      single-spa--version: ${{ steps.release.outputs['packages/single-spa--version'] }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PACKAGES_TOKEN }}
           fetch-depth: 0
-          
+
       - uses: googleapis/release-please-action@v4
         id: release
         with:
@@ -41,15 +42,15 @@ jobs:
           echo '${{ toJson(steps.release.outputs) }}' > release-outputs.json
           cat release-outputs.json
 
-  # 调整：发布到 npm（仅发布有更新的子包）
-  publish-to-npm:
+  # 发布 micro-dev-config 到 npm
+  publish-micro-dev-config-to-npm:
     needs: [release-please]
     runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
     # 只要有任意子包发布，就触发该作业
-    if: ${{ needs.release-please.outputs.releases_created == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -68,30 +69,86 @@ jobs:
           registry-url: https://registry.npmjs.org
           cache: 'pnpm'
           cache-dependency-path: 'pnpm-lock.yaml'
-          
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
 
       - name: Verify version
-        run: pnpm --filter @event-chat/micro-dev-config exec node -p "require('./package.json').version"
+        run: |
+          pnpm --filter @event-chat/micro-dev-config \
+          exec node -e "const p=require('./package.json');console.log(`${p.name}@${p.version}`)"
 
       - name: Build project
         run: pnpm --filter @event-chat/micro-dev-config... build
 
       - name: Check publish contents
-        if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
         run: |
           pnpm --filter @event-chat/micro-dev-config publish \
           --dry-run \
           --no-git-checks
 
-      # 仅发布micro-dev-config（如果该包有更新）
-      - name: Publish micro-dev-config to npm
-        if: ${{ needs.release-please.outputs['micro-dev-config--release_created'] == 'true' }}
+      # 仅发布 micro-dev-config（如果该包有更新）
+      - name: Publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           pnpm --filter @event-chat/micro-dev-config publish \
+          --access public \
+          --provenance \
+          --no-git-checks \
+          --report-summary
+
+  # 发布 single-spa 到 npm
+  publish-single-spa-to-npm:
+    needs: [release-please]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    # 只要有任意子包发布，就触发该作业
+    if: ${{ needs.release-please.outputs['single-spa--release_created'] == 'true' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ needs.release-please.outputs.single-spa--tag_name }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          registry-url: https://registry.npmjs.org
+          cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --prefer-offline
+
+      - name: Verify version
+        run: |
+          pnpm --filter @event-chat/single-spa \
+          exec node -e "const p=require('./package.json');console.log(`${p.name}@${p.version}`)"
+
+      - name: Build project
+        run: pnpm --filter @event-chat/single-spa... build
+
+      - name: Check publish contents
+        run: |
+          pnpm --filter @event-chat/single-spa publish \
+          --dry-run \
+          --no-git-checks
+
+      # 仅发布 single-spa（如果该包有更新）
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          pnpm --filter @event-chat/single-spa publish \
           --access public \
           --provenance \
           --no-git-checks \
