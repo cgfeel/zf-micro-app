@@ -1,6 +1,6 @@
 {
   "name": "@event-chat/single-spa",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "手写一个 single-spa",
   "type": "module",
   "scripts": {
