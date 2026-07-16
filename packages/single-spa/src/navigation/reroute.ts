@@ -1,11 +1,11 @@
-import { getAppChanges, shouldBeActive } from '../application/app.helpers.ts'
-import { AppItemType } from '../application/app.ts'
-import { toBootstrapPromise } from '../lifecycles/bootstrap.ts'
-import { toLoadPromise } from '../lifecycles/load.ts'
-import { toMountPromise } from '../lifecycles/mount.ts'
-import { toUnmoutPromise } from '../lifecycles/unmount.ts'
-import { mount } from '../start.ts'
-import { UrlChangeEvent, callCaptureEventListener } from './navigation.event.ts'
+import { AppItemType } from '../application/app'
+import { getAppChanges, shouldBeActive } from '../application/app.helpers'
+import { toBootstrapPromise } from '../lifecycles/bootstrap'
+import { toLoadPromise } from '../lifecycles/load'
+import { toMountPromise } from '../lifecycles/mount'
+import { toUnmoutPromise } from '../lifecycles/unmount'
+import { mount } from '../start'
+import { UrlChangeEvent, callCaptureEventListener } from './navigation.event'
 
 // 后续路径变化也将在这里重新计算，哪些应用被加载、哪些挂载、哪些卸载
 export function reroute(apps: AppItemType[], event?: UrlChangeEvent) {

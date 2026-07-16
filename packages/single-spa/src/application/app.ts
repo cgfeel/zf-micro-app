@@ -1,5 +1,5 @@
-import { reroute } from '../navigation/reroute.ts'
-import { APPLICATION_STATUS } from './app.helpers.ts'
+import { reroute } from '../navigation/reroute'
+import { APPLICATION_STATUS } from './app.helpers'
 
 export const apps: AppItemType[] = []
 

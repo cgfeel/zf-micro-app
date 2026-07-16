@@ -421,8 +421,8 @@ importers:
   apps/single-spa/single-spa-raw:
     dependencies:
       '@event-chat/single-spa':
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.3
+        version: 0.0.3
     devDependencies:
       '@event-chat/micro-dev-config':
         specifier: ^0.0.21
@@ -1735,8 +1735,8 @@ packages:
     peerDependencies:
       typescript: ^5.9.3
 
-  '@event-chat/single-spa@0.0.2':
-    resolution: {integrity: sha512-+ytFLcqQ81ARJ7Ey20X2s8WQLF0YJ56C+D42ToLpOAvkv0pvT2XJbBNkpYTWi7dChMlEOr54fhuG5JbBM7E7+g==}
+  '@event-chat/single-spa@0.0.3':
+    resolution: {integrity: sha512-6RWX8fA+VT3VyY/a3LjoupLupfcyBqSy2IH509RDRqZR7GW5WUTYKT3K4UT6DDdjN9qYWEAuSighEsosWpKtkQ==}
 
   '@google-automations/git-file-utils@3.0.1':
     resolution: {integrity: sha512-vlQZ8DlBcippB5zTY0M5Rib8tKT4yQ7oBKbs6kcWAzp70oyillKinXLZwlIgNTmfzzZx1J6cez3M0EmrpXFRcw==}
@@ -10069,7 +10069,7 @@ snapshots:
       - utf-8-validate
       - webpack-bundle-analyzer
 
-  '@event-chat/single-spa@0.0.2': {}
+  '@event-chat/single-spa@0.0.3': {}
 
   '@google-automations/git-file-utils@3.0.1':
     dependencies:
@@ -16504,13 +16504,16 @@ snapshots:
       cssnano: 5.1.15(postcss@8.5.16)
       postcss: 8.5.16
 
-  minimizer-webpack-plugin@5.6.1(webpack@5.108.4):
+  minimizer-webpack-plugin@5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
       webpack: 5.108.4(webpack-cli@5.1.4)
+    optionalDependencies:
+      cssnano: 5.1.15(postcss@8.5.16)
+      postcss: 8.5.16
 
   minipass@3.3.6:
     dependencies:
@@ -19677,7 +19680,7 @@ snapshots:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.4)
+      minimizer-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.16))(postcss@8.5.16)(webpack@5.108.4)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
