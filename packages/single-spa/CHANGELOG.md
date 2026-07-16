@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.10](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.9...single-spa@v0.0.10) (2026-07-16)
+
+
+### Bug Fixes
+
+* update moduleResolution ([0e56ea0](https://github.com/cgfeel/zf-micro-app/commit/0e56ea0712c7fe232a341e07060ecfa2dcc1406e))
+* update moduleResolution ([5631872](https://github.com/cgfeel/zf-micro-app/commit/5631872372de9d7419806884224dd11109db0116))
+
 ## [0.0.9](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.8...single-spa@v0.0.9) (2026-07-16)
 
 
