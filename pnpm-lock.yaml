@@ -421,8 +421,8 @@ importers:
   apps/single-spa/single-spa-raw:
     dependencies:
       '@event-chat/single-spa':
-        specifier: ^0.0.7
-        version: 0.0.7
+        specifier: ^0.0.8
+        version: 0.0.8
     devDependencies:
       '@event-chat/micro-dev-config':
         specifier: ^0.0.21
@@ -1735,8 +1735,8 @@ packages:
     peerDependencies:
       typescript: ^5.9.3
 
-  '@event-chat/single-spa@0.0.7':
-    resolution: {integrity: sha512-Yh7/I5S/cKPNkCwa1xroDMYwfcGcYuP+1XlW4dcoJZ/sqB5F/BElVwtq70XToI2zGbes/30A4QHfRB2uQh5Whw==}
+  '@event-chat/single-spa@0.0.8':
+    resolution: {integrity: sha512-WjtoijrU440nACHHT9NfdFdGABQ4VnwMjNjVQ4MwYyNrJghG79jkMAqF3ri8h2is5JHYaLna7/0qIZESHZ6iQw==}
 
   '@google-automations/git-file-utils@3.0.1':
     resolution: {integrity: sha512-vlQZ8DlBcippB5zTY0M5Rib8tKT4yQ7oBKbs6kcWAzp70oyillKinXLZwlIgNTmfzzZx1J6cez3M0EmrpXFRcw==}
@@ -10069,7 +10069,7 @@ snapshots:
       - utf-8-validate
       - webpack-bundle-analyzer
 
-  '@event-chat/single-spa@0.0.7': {}
+  '@event-chat/single-spa@0.0.8': {}
 
   '@google-automations/git-file-utils@3.0.1':
     dependencies:
