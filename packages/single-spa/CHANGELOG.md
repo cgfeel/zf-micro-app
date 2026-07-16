@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.8](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.7...single-spa@v0.0.8) (2026-07-16)
+
+
+### Bug Fixes
+
+* add declarationMap to build ts map ([84154ca](https://github.com/cgfeel/zf-micro-app/commit/84154ca0ec293feaea4abff29dc0b7544e3e9cc7))
+* add declarationMap to build ts map ([aa06819](https://github.com/cgfeel/zf-micro-app/commit/aa06819f82146d5c12fb80e255013d2b5a4e7e6f))
+
 ## [0.0.7](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.6...single-spa@v0.0.7) (2026-07-16)
 
 
