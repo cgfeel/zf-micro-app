@@ -87,7 +87,7 @@ export type AppItemType<APP extends ApplicationType = ApplicationType> = Partial
 
 export type LoadAppType<APP extends ApplicationType = ApplicationType> = (
   props: AppItemType['customProps']
-) => Promise<APP>
+) => Promise<APP> | APP
 
 export type MountActionType = MountType | MountType[]
 

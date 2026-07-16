@@ -12,15 +12,17 @@ export function toLoadPromise(app: AppItemType) {
     app.status = APPLICATION_STATUS.LOADING_SOURCE_CODE
 
     // 相当于 systemjs 中的 System.import
-    return loadApp(customProps).then(({ bootstrap, mount, unmount }) => {
-      // 将加载的信息更新到 app 并返回
-      app.status = APPLICATION_STATUS.NOT_BOOTSTRAPED
-      app.bootstrap = flattenArrayToPromise(bootstrap)
-      app.mount = flattenArrayToPromise(mount)
-      app.unmount = flattenArrayToPromise(unmount)
+    return Promise.resolve()
+      .then(() => loadApp(customProps))
+      .then(({ bootstrap, mount, unmount }) => {
+        // 将加载的信息更新到 app 并返回
+        app.status = APPLICATION_STATUS.NOT_BOOTSTRAPED
+        app.bootstrap = flattenArrayToPromise(bootstrap)
+        app.mount = flattenArrayToPromise(mount)
+        app.unmount = flattenArrayToPromise(unmount)
 
-      return app
-    })
+        return app
+      })
   })
 }
 
