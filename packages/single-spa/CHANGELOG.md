@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.7](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.6...single-spa@v0.0.7) (2026-07-16)
+
+
+### Bug Fixes
+
+* type AppItemType add generic ([fe091cb](https://github.com/cgfeel/zf-micro-app/commit/fe091cbe3987274d1906a5057bd282dbd7e6744a))
+* type AppItemType add generic ([a9c067a](https://github.com/cgfeel/zf-micro-app/commit/a9c067ad5d7f8209e135e0360a6450d783f79c56))
+
 ## [0.0.6](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.5...single-spa@v0.0.6) (2026-07-16)
 
 
