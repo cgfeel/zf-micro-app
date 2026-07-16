@@ -1,5 +1,5 @@
-import build from './commands/build'
-import serve from './commands/serve'
+import build from './commands/build.ts'
+import serve from './commands/serve.ts'
 
 const COMMANDS = ['build', 'serve']
 const args = process.argv.slice(2)
