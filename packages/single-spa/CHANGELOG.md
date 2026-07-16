@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.11](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.10...single-spa@v0.0.11) (2026-07-16)
+
+
+### Bug Fixes
+
+* update customProps type ([592dcc3](https://github.com/cgfeel/zf-micro-app/commit/592dcc363a0e2cc6e4e0c368ef993bb9e32766fb))
+* update customProps type ([62b4388](https://github.com/cgfeel/zf-micro-app/commit/62b4388b1392efd1f7d425071bd2fec37624cd0d))
+
 ## [0.0.10](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.9...single-spa@v0.0.10) (2026-07-16)
 
 
