@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.9](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.8...single-spa@v0.0.9) (2026-07-16)
+
+
+### Bug Fixes
+
+* package add types entry ([438a38e](https://github.com/cgfeel/zf-micro-app/commit/438a38e6211ea47889873228b7722b2e2676c103))
+* package add types entry ([6ecbb1e](https://github.com/cgfeel/zf-micro-app/commit/6ecbb1eaeb8cad9a0a56aea29cebee18248c0274))
+
 ## [0.0.8](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.7...single-spa@v0.0.8) (2026-07-16)
 
 
