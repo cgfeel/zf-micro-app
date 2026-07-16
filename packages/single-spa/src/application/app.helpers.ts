@@ -1,5 +1,3 @@
-import { AppItemType } from './app'
-
 export enum APPLICATION_STATUS {
   // app status
   LOADING_ERROR = 'LOADING_ERROR',
@@ -65,3 +63,24 @@ export function isActive(app: AppItemType) {
 export function shouldBeActive(app: AppItemType) {
   return app.activeWhen(window.location)
 }
+
+export interface ApplicationType {
+  bootstrap: MountActionType
+  mount: MountActionType
+  unmount: MountActionType
+}
+
+export type AppItemType = Partial<Record<keyof ApplicationType, MountType>> & {
+  customProps: CustomPropsType & { _name: string }
+  name: string
+  status: APPLICATION_STATUS
+  activeWhen: ActiveWhenType
+  loadApp: LoadAppType
+}
+
+export type ActiveWhenType = (location: Location) => boolean
+export type CustomPropsType = Record<PropertyKey, any>
+export type LoadAppType = (props: AppItemType['customProps']) => Promise<ApplicationType>
+export type MountActionType = MountType | MountType[]
+
+type MountType = (props: AppItemType['customProps']) => Promise<void>

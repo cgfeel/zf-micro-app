@@ -1,5 +1,11 @@
 import { reroute } from '../navigation/reroute'
-import { APPLICATION_STATUS } from './app.helpers'
+import {
+  APPLICATION_STATUS,
+  ActiveWhenType,
+  AppItemType,
+  CustomPropsType,
+  LoadAppType,
+} from './app.helpers'
 
 export const apps: AppItemType[] = []
 
@@ -28,24 +34,3 @@ export function registerApplication(
   // 需要检查哪些应用要被加载，还有哪些应用要被移除，还有哪些应用要被挂载
   reroute(apps)
 }
-
-export interface ApplicationType {
-  bootstrap: MountActionType
-  mount: MountActionType
-  unmount: MountActionType
-}
-
-export type AppItemType = Partial<Record<keyof ApplicationType, MountType>> & {
-  customProps: CustomPropsType & { _name: string }
-  name: string
-  status: APPLICATION_STATUS
-  activeWhen: ActiveWhenType
-  loadApp: LoadAppType
-}
-
-export type MountActionType = MountType | MountType[]
-
-type ActiveWhenType = (location: Location) => boolean
-type CustomPropsType = Record<PropertyKey, any>
-type LoadAppType = (props: AppItemType['customProps']) => Promise<ApplicationType>
-type MountType = (props: AppItemType['customProps']) => Promise<void>
