@@ -1,4 +1,4 @@
-import { AppItemType } from '../application/app'
+import { AppItemType } from '../application/app.helpers'
 import { reroute } from './reroute'
 
 const listener: Partial<EventListenerObject> = {}
