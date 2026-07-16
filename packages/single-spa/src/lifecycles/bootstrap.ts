@@ -1,5 +1,4 @@
-import { AppItemType } from '../application/app'
-import { APPLICATION_STATUS } from '../application/app.helpers'
+import { APPLICATION_STATUS, AppItemType } from '../application/app.helpers'
 
 export function toBootstrapPromise(app: AppItemType) {
   return Promise.resolve().then(() => {

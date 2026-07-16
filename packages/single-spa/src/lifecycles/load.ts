@@ -1,5 +1,4 @@
-import { AppItemType, MountActionType } from '../application/app'
-import { APPLICATION_STATUS } from '../application/app.helpers'
+import { APPLICATION_STATUS, AppItemType, MountActionType } from '../application/app.helpers'
 
 export function toLoadPromise(app: AppItemType) {
   return Promise.resolve().then(() => {

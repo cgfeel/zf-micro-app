@@ -1,5 +1,4 @@
-import { AppItemType } from '../application/app'
-import { getAppChanges, shouldBeActive } from '../application/app.helpers'
+import { AppItemType, getAppChanges, shouldBeActive } from '../application/app.helpers'
 import { toBootstrapPromise } from '../lifecycles/bootstrap'
 import { toLoadPromise } from '../lifecycles/load'
 import { toMountPromise } from '../lifecycles/mount'
