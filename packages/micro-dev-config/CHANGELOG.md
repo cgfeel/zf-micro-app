@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.24](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.23...micro-dev-config@v0.0.24) (2026-07-16)
+
+
+### Bug Fixes
+
+* update moduleResolution ([0e56ea0](https://github.com/cgfeel/zf-micro-app/commit/0e56ea0712c7fe232a341e07060ecfa2dcc1406e))
+* update moduleResolution ([5631872](https://github.com/cgfeel/zf-micro-app/commit/5631872372de9d7419806884224dd11109db0116))
+
 ## [0.0.23](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.22...micro-dev-config@v0.0.23) (2026-07-14)
 
 
