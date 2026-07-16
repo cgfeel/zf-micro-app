@@ -8,9 +8,11 @@ export function toMountPromise(app: AppItemType) {
       return app
     }
 
-    return mount(customProps).then(() => {
-      app.status = APPLICATION_STATUS.MOUNTED
-      return app
-    })
+    return Promise.resolve()
+      .then(() => mount(customProps))
+      .then(() => {
+        app.status = APPLICATION_STATUS.MOUNTED
+        return app
+      })
   })
 }

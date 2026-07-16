@@ -8,9 +8,11 @@ export function toBootstrapPromise(app: AppItemType) {
       return app
     }
     app.status = APPLICATION_STATUS.BOOTSTRAPING
-    return bootstrap(customProps).then(() => {
-      app.status = APPLICATION_STATUS.NOT_MOUNTED
-      return app
-    })
+    return Promise.resolve()
+      .then(() => bootstrap(customProps))
+      .then(() => {
+        app.status = APPLICATION_STATUS.NOT_MOUNTED
+        return app
+      })
   })
 }

@@ -64,23 +64,31 @@ export function shouldBeActive(app: AppItemType) {
   return app.activeWhen(window.location)
 }
 
-export interface ApplicationType {
-  bootstrap: MountActionType
-  mount: MountActionType
-  unmount: MountActionType
-}
-
-export type AppItemType = Partial<Record<keyof ApplicationType, MountType>> & {
-  customProps: CustomPropsType & { _name: string }
-  name: string
-  status: APPLICATION_STATUS
-  activeWhen: ActiveWhenType
-  loadApp: LoadAppType
+export interface ApplicationType<
+  BOOTSTRAP extends MountActionType = MountActionType,
+  MOUNT extends MountActionType = MountActionType,
+  UNMOUNT extends MountActionType = MountActionType,
+> {
+  bootstrap: BOOTSTRAP
+  mount: MOUNT
+  unmount: UNMOUNT
 }
 
 export type ActiveWhenType = (location: Location) => boolean
-export type CustomPropsType = Record<PropertyKey, any>
-export type LoadAppType = (props: AppItemType['customProps']) => Promise<ApplicationType>
-export type MountActionType = MountType | MountType[]
+export type AppItemType<APP extends ApplicationType = ApplicationType> = Partial<
+  Record<keyof ApplicationType, MountType>
+> & {
+  customProps: CustomPropsType
+  name: string
+  status: APPLICATION_STATUS
+  activeWhen: ActiveWhenType
+  loadApp: LoadAppType<APP>
+}
 
-type MountType = (props: AppItemType['customProps']) => Promise<void>
+export type CustomPropsType = Record<PropertyKey, any> & { _name: string }
+export type LoadAppType<APP extends ApplicationType = ApplicationType> = (
+  props: AppItemType['customProps']
+) => Promise<APP>
+
+export type MountActionType = MountType | MountType[]
+type MountType = (props: CustomPropsType) => Promise<void> | void

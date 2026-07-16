@@ -9,9 +9,11 @@ export function toUnmoutPromise(app: AppItemType) {
     }
 
     app.status = APPLICATION_STATUS.UNMOUNTING
-    return unmount(customProps).then(() => {
-      app.status = APPLICATION_STATUS.NOT_MOUNTED
-      return app
-    })
+    return Promise.resolve()
+      .then(() => unmount(customProps))
+      .then(() => {
+        app.status = APPLICATION_STATUS.NOT_MOUNTED
+        return app
+      })
   })
 }
