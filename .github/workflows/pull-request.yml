@@ -29,8 +29,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
 
-      - name: Build project
+      - name: Build micro-dev-config project
         run: pnpm --filter @event-chat/micro-dev-config... build
 
-      - name: Build project
+      - name: Build single-spa project
         run: pnpm --filter @event-chat/single-spa... build
