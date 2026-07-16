@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.5](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.4...single-spa@v0.0.5) (2026-07-16)
+
+
+### Bug Fixes
+
+* update circular reference ([16a4b11](https://github.com/cgfeel/zf-micro-app/commit/16a4b112a762e536515166e3903a1c793e1a1b57))
+* update circular reference ([18411ac](https://github.com/cgfeel/zf-micro-app/commit/18411ac4c44128c0169e04b5a5faced93a34b090))
+* update import path ([06f0326](https://github.com/cgfeel/zf-micro-app/commit/06f0326ee27c8eb501b874f664af085480db176a))
+
 ## [0.0.4](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.3...single-spa@v0.0.4) (2026-07-16)
 
 
