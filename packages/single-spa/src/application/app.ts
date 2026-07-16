@@ -1,11 +1,5 @@
 import { reroute } from '../navigation/reroute'
-import {
-  APPLICATION_STATUS,
-  ActiveWhenType,
-  AppItemType,
-  CustomPropsType,
-  LoadAppType,
-} from './app.helpers'
+import { APPLICATION_STATUS, ActiveWhenType, AppItemType, LoadAppType } from './app.helpers'
 
 export const apps: AppItemType[] = []
 
@@ -13,7 +7,7 @@ export function registerApplication(
   appName: string,
   loadApp: LoadAppType,
   activeWhen: ActiveWhenType,
-  customProps?: CustomPropsType
+  customProps?: Record<PropertyKey, any>
 ) {
   const registeration = {
     customProps: {
