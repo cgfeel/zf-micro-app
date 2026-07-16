@@ -10,6 +10,10 @@
   "bin": {
     "micro-cli": "./dist/bin/micro-cli.js"
   },
+  "files": [
+    "dist",
+    "tsconfig.json"
+  ],
   "exports": {
     ".": "./dist/index.js",
     "./helpers": "./dist/helpers.js",
