@@ -1,5 +1,5 @@
-import { reroute } from '../navigation/reroute'
-import { APPLICATION_STATUS, ActiveWhenType, AppItemType, LoadAppType } from './app.helpers'
+import { reroute } from '../navigation/reroute.ts'
+import { APPLICATION_STATUS, ActiveWhenType, AppItemType, LoadAppType } from './app.helpers.ts'
 
 export const apps: AppItemType[] = []
 

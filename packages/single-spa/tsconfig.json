@@ -10,9 +10,9 @@
     "sourceMap": true,
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-    // "allowImportingTsExtensions": true,
-    // "rewriteRelativeImportExtensions": true
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
     // "noEmit": true
   },
   "include": ["src/**/*.ts"]
