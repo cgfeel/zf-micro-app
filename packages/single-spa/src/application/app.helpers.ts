@@ -85,10 +85,11 @@ export type AppItemType<APP extends ApplicationType = ApplicationType> = Partial
   loadApp: LoadAppType<APP>
 }
 
-export type CustomPropsType = Record<PropertyKey, any> & { _name: string }
 export type LoadAppType<APP extends ApplicationType = ApplicationType> = (
   props: AppItemType['customProps']
 ) => Promise<APP>
 
 export type MountActionType = MountType | MountType[]
+
+type CustomPropsType = Record<PropertyKey, any> & { _name: string }
 type MountType = (props: CustomPropsType) => Promise<void> | void
