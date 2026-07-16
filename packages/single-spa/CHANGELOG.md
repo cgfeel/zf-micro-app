@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.13](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.12...single-spa@v0.0.13) (2026-07-16)
+
+
+### Bug Fixes
+
+* update load type ([9221392](https://github.com/cgfeel/zf-micro-app/commit/9221392c74f2b53535b3fd6ffafb292cd26d83fe))
+* update load type ([ef578c9](https://github.com/cgfeel/zf-micro-app/commit/ef578c9841fe36f0118fff81ebc48e458da22ac3))
+
 ## [0.0.12](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.11...single-spa@v0.0.12) (2026-07-16)
 
 
