@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.25](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.24...micro-dev-config@v0.0.25) (2026-07-16)
+
+
+### Bug Fixes
+
+* update micropath ([673b884](https://github.com/cgfeel/zf-micro-app/commit/673b8846190e8b473898999300fc3999aa59773a))
+* update micropath ([adce7ff](https://github.com/cgfeel/zf-micro-app/commit/adce7ff995082556c1cd67bfde7ba11f19b16d7e))
+
 ## [0.0.24](https://github.com/cgfeel/zf-micro-app/compare/micro-dev-config@v0.0.23...micro-dev-config@v0.0.24) (2026-07-16)
 
 
