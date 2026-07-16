@@ -1,5 +1,5 @@
-import { APPLICATION_STATUS } from '../application/app.helpers.ts'
-import { AppItemType, MountActionType } from '../application/app.ts'
+import { AppItemType, MountActionType } from '../application/app'
+import { APPLICATION_STATUS } from '../application/app.helpers'
 
 export function toLoadPromise(app: AppItemType) {
   return Promise.resolve().then(() => {

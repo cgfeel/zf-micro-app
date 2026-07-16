@@ -1,5 +1,5 @@
-import { APPLICATION_STATUS } from '../application/app.helpers.ts'
-import { AppItemType } from '../application/app.ts'
+import { AppItemType } from '../application/app'
+import { APPLICATION_STATUS } from '../application/app.helpers'
 
 export function toUnmoutPromise(app: AppItemType) {
   return Promise.resolve().then(() => {

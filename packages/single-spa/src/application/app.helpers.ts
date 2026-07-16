@@ -1,4 +1,4 @@
-import { AppItemType } from './app.ts'
+import { AppItemType } from './app'
 
 export enum APPLICATION_STATUS {
   // app status
