@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.12](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.11...single-spa@v0.0.12) (2026-07-16)
+
+
+### Bug Fixes
+
+* update js path ([4342c0a](https://github.com/cgfeel/zf-micro-app/commit/4342c0a91cf3a630f969330a42d22bb4a19286b8))
+* update js path ([8cdb3f6](https://github.com/cgfeel/zf-micro-app/commit/8cdb3f637690dab3e64b1ab9bd242626c1f894eb))
+
 ## [0.0.11](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.10...single-spa@v0.0.11) (2026-07-16)
 
 
