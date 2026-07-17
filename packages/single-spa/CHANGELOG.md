@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.14](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.13...single-spa@v0.0.14) (2026-07-17)
+
+
+### Bug Fixes
+
+* add Promise lock ([616483d](https://github.com/cgfeel/zf-micro-app/commit/616483d654c848ebf36f3ca70380958b07c2b490))
+* add Promise lock ([abf6078](https://github.com/cgfeel/zf-micro-app/commit/abf6078d2d0032dd94a0d1f2d780636550619e30))
+
 ## [0.0.13](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.12...single-spa@v0.0.13) (2026-07-16)
 
 
