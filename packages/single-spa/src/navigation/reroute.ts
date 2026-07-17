@@ -1,4 +1,9 @@
-import { AppItemType, getAppChanges, shouldBeActive } from '../application/app.helpers.ts'
+import {
+  APPLICATION_STATUS,
+  AppItemType,
+  getAppChanges,
+  shouldBeActive,
+} from '../application/app.helpers.ts'
 import { toBootstrapPromise } from '../lifecycles/bootstrap.ts'
 import { toLoadPromise } from '../lifecycles/load.ts'
 import { toMountPromise } from '../lifecycles/mount.ts'
@@ -21,7 +26,9 @@ export function reroute(apps: AppItemType[], event?: UrlChangeEvent) {
   // 在微任务修改状态完成前，start 已将应用再次添加到新的加载微任务队列中了
   return Promise.all(appsToLoad.map(toLoadPromise)).then(() => {
     callCaptureEventListener(event)
-    apps.map(({ trigger }) => trigger())
+    apps.map(({ status, trigger }) => {
+      if (status !== APPLICATION_STATUS.NOT_LOADED) trigger()
+    })
   })
 }
 
