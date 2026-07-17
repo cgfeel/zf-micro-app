@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.17](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.16...single-spa@v0.0.17) (2026-07-17)
+
+
+### Bug Fixes
+
+* reduce Promise.resolve ([a0f309b](https://github.com/cgfeel/zf-micro-app/commit/a0f309baef69d2b0fb42b6b63d394a1c1fb3d72e))
+* reduce Promise.resolve ([7ec8b0b](https://github.com/cgfeel/zf-micro-app/commit/7ec8b0b689244d26aedfeb832171d09a374d730e))
+* return load Promise App ([6b12b07](https://github.com/cgfeel/zf-micro-app/commit/6b12b0776528dd65fded9da64de384e57dbb2b62))
+
 ## [0.0.16](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.15...single-spa@v0.0.16) (2026-07-17)
 
 
