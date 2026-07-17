@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.16](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.15...single-spa@v0.0.16) (2026-07-17)
+
+
+### Bug Fixes
+
+* update diff trigger ([202ce1e](https://github.com/cgfeel/zf-micro-app/commit/202ce1e5672accb0cf03e59abeffe147c041f85b))
+* update trigger at finally ([5bc247f](https://github.com/cgfeel/zf-micro-app/commit/5bc247fbf7fbba879df38ef8e8c7094c97f11dc1))
+
 ## [0.0.15](https://github.com/cgfeel/zf-micro-app/compare/single-spa@v0.0.14...single-spa@v0.0.15) (2026-07-17)
 
 
