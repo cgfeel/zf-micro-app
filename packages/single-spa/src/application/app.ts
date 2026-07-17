@@ -9,6 +9,13 @@ export function registerApplication(
   activeWhen: ActiveWhenType,
   customProps?: Record<PropertyKey, any>
 ) {
+  if (apps.find(({ name }) => name === appName)) return
+
+  let trigger = (value: void | PromiseLike<void>) => {}
+  const loaded = new Promise<void>((resolve) => {
+    trigger = resolve
+  })
+
   const registeration = {
     customProps: {
       ...customProps,
@@ -16,9 +23,12 @@ export function registerApplication(
     },
     name: appName,
     status: APPLICATION_STATUS.NOT_LOADED,
+    loaded,
     activeWhen,
     loadApp,
+    trigger,
   }
+
   apps.push(registeration)
 
   // 我们需要给每个应用添加对应的状态变化
