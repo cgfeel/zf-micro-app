@@ -19,7 +19,10 @@ export function reroute(apps: AppItemType[], event?: UrlChangeEvent) {
 
   // 注意：这里是一个微任务，如果 registerApplication 和 start 同时执行
   // 在微任务修改状态完成前，start 已将应用再次添加到新的加载微任务队列中了
-  return Promise.all(appsToLoad.map(toLoadPromise)).then(() => callCaptureEventListener(event))
+  return Promise.all(appsToLoad.map(toLoadPromise)).then(() => {
+    callCaptureEventListener(event)
+    apps.map(({ trigger }) => trigger())
+  })
 }
 
 function preformAppChange(apps: AppItemType[]) {
