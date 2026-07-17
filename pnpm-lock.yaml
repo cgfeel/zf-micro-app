@@ -185,8 +185,8 @@ importers:
   apps/qiankun/static-project:
     dependencies:
       '@event-chat/single-spa':
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^0.0.15
+        version: 0.0.15
     devDependencies:
       '@babel/preset-env':
         specifier: ^7.24.6
@@ -431,8 +431,8 @@ importers:
   apps/single-spa/single-spa-raw:
     dependencies:
       '@event-chat/single-spa':
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^0.0.15
+        version: 0.0.15
     devDependencies:
       '@event-chat/micro-dev-config':
         specifier: ^0.0.25
@@ -1751,8 +1751,8 @@ packages:
     peerDependencies:
       typescript: ^5.9.3
 
-  '@event-chat/single-spa@0.0.14':
-    resolution: {integrity: sha512-gdx1kIvE136NvvOfs8sf8ISacy6Sf/hGFG6nhefUtaQWy/b/zzuHrHBOEi3Dv/nZLuKZ6NQ8jvm5acMgZF/WzQ==}
+  '@event-chat/single-spa@0.0.15':
+    resolution: {integrity: sha512-SqQO96ti3hPVX9V17KQmpJjEo4yXgyaiuYjnuVN/SfNx47pxsqvuOFNpfDUPR1Di3ZsGttegGeqxA7IvVPWM4g==}
 
   '@google-automations/git-file-utils@3.0.1':
     resolution: {integrity: sha512-vlQZ8DlBcippB5zTY0M5Rib8tKT4yQ7oBKbs6kcWAzp70oyillKinXLZwlIgNTmfzzZx1J6cez3M0EmrpXFRcw==}
@@ -10117,7 +10117,7 @@ snapshots:
       - utf-8-validate
       - webpack-bundle-analyzer
 
-  '@event-chat/single-spa@0.0.14': {}
+  '@event-chat/single-spa@0.0.15': {}
 
   '@google-automations/git-file-utils@3.0.1':
     dependencies:

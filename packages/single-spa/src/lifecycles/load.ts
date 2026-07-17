@@ -2,7 +2,7 @@ import { APPLICATION_STATUS, AppItemType, MountActionType } from '../application
 
 export function toLoadPromise(app: AppItemType) {
   return Promise.resolve().then(() => {
-    const { customProps, status, loadApp } = app
+    const { customProps, status, loadApp, trigger } = app
     if (status !== APPLICATION_STATUS.NOT_LOADED) {
       // 此应用已加载完毕了
       return app
@@ -23,6 +23,7 @@ export function toLoadPromise(app: AppItemType) {
 
         return app
       })
+      .finally(() => trigger())
   })
 }
 
