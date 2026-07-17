@@ -79,10 +79,12 @@ export type AppItemType<APP extends ApplicationType = ApplicationType> = Partial
   Record<keyof ApplicationType, MountType>
 > & {
   customProps: CustomPropsType
+  loaded: Promise<void>
   name: string
   status: APPLICATION_STATUS
   activeWhen: ActiveWhenType
   loadApp: LoadAppType<APP>
+  trigger: (value: void | PromiseLike<void>) => void
 }
 
 export type LoadAppType<APP extends ApplicationType = ApplicationType> = (
