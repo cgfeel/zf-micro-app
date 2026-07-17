@@ -27,7 +27,7 @@ export function reroute(apps: AppItemType[], event?: UrlChangeEvent) {
   return Promise.all(appsToLoad.map(toLoadPromise)).then(() => {
     callCaptureEventListener(event)
     apps.map(({ status, trigger }) => {
-      if (status !== APPLICATION_STATUS.NOT_LOADED) trigger()
+      if (status === APPLICATION_STATUS.NOT_LOADED) trigger()
     })
   })
 }

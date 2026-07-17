@@ -21,9 +21,9 @@ export function toLoadPromise(app: AppItemType) {
         app.mount = flattenArrayToPromise(mount)
         app.unmount = flattenArrayToPromise(unmount)
 
-        trigger()
         return app
       })
+      .finally(() => trigger())
   })
 }
 
