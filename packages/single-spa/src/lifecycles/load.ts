@@ -4,7 +4,7 @@ export function toLoadPromise(app: AppItemType) {
   const { customProps, status, loadApp, trigger } = app
   if (status !== APPLICATION_STATUS.NOT_LOADED) {
     // 此应用已加载完毕了
-    return app
+    return Promise.resolve(app)
   }
 
   // 正在加载应用
